@@ -1,0 +1,44 @@
+POSTBACK SUBMIT
+
+REQ HEADERS:
+POST /tools/requests/_layouts/Postback.FormServer.aspx HTTP/1.1
+Host: 2dintranet.2degreesmobile.co.nz
+Connection: keep-alive
+Content-Length: 1292
+Pragma: no-cache
+Cache-Control: no-cache
+Authorization: NTLM TlRMTVNTUAADAAAAGAAYAJAAAABkAWQBqAAAAAYABgBYAAAAIAAgAF4AAAASABIAfgAAAAAAAAAMAgAABYKIogYBsR0AAAAPdYFH3on7cjXqhu8KBu8uvE4AWgBDAEIAcgB5AG4AbABlAHkALgBNAGMARABvAG4AYQBsAGQAVwBOAFoAQwBMADAANAA2ADEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA5WTAPANmJMBQnxiJoCuAiwEBAAAAAAAAHAekGF1I0wFYxstPHjR+ygAAAAACAAYATgBaAEMAAQAWAFMATgBaAEMATABBAEsATAAxADUANQAEABIATgBaAEMALgBjAG8ALgBuAHoAAwAqAFMATgBaAEMATABBAEsATAAxADUANQAuAE4AWgBDAC4AYwBvAC4AbgB6AAUAEgBOAFoAQwAuAGMAbwAuAG4AegAHAAgAHAekGF1I0wEGAAQAAgAAAAgAMAAwAAAAAAAAAAAAAAAAIAAA03joyJ35IMGodlpI9JJmjj3h53GuOz8yq8oHxIz+kOcKABAAAAAAAAAAAAAAAAAAAAAAAAkATgBIAFQAVABQAC8AMgBkAGkAbgB0AHIAYQBuAGUAdAAuADIAZABlAGcAcgBlAGUAcwBtAG8AYgBpAGwAZQAuAGMAbwAuAG4AegA6ADgAMAAAAAAAAAAAAAAAAAA=
+Origin: http://2dintranet.2degreesmobile.co.nz
+User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36
+Content-Type: text/plain;charset=UTF-8
+Accept: */*
+Referer: http://2dintranet.2degreesmobile.co.nz/tools/requests/_layouts/FormServer.aspx?XsnLocation=http://2dintranet.2degreesmobile.co.nz/tools/requests/Exceptions/Forms/template.xsn&SaveLocation=http%3A%2F%2F2dintranet%2E2degreesmobile%2Eco%2Enz%2Ftools%2Frequests%2FExceptions&ClientInstalled=false&Source=http%3A%2F%2F2dintranet%2E2degreesmobile%2Eco%2Enz%2Ftools%2Frequests%2FExceptions%2FForms%2FMyExceptions%2Easpx%3FFilterField1%3DID%26FilterValue1%3D60650%26FilterOp1%3DGeq%26OverrideScope%3DRecursiveAll%26FallbackLimit%3D60650%26ProcessQStringToCAML%3D1&DefaultItemOpen=1
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.8,en-NZ;q=0.6,en-GB;q=0.4
+Cookie: sharedSessionValuesHolder=OYqfFbXrUW1OxzYpnmE%2BLUI9PSjU%2Fd1XkS%2FPKw1N5Kw%3D; ORA_OTD_JROUTE=KYZN0U3sw1uH9kXo; _InfoPath_CanaryValueAHGHX7LZ6BTK4QERG2MLZQXUDLQTKL2LIIXUEUSPIFCEEQKOIRFUEL2MJFJVIUZPIZEVQRKEEBJEKRSVJZCFGL2JKRCU2L2UIVGVATCBKRCS4WCTJYVUKTKCPEYEOULQOVKTKRZQOJZEY2LLJIYFKV3BNJIWURDGJE3GWMSUNZGEQN2YJVCWI5CBA=/oqzi+S3mbRuXuzpoG1Cmt/IDyolSxo1asLUgdnnLb3i+HlvzEoizTx//wm/2AcBoQMD3G8+38CLIss1u64K2w==|636438797644422362; 47e34b2c1b934e6fbe616dfc369eea94NZC%5CBrynley%2EMcDonald=0; WebAnalyticsSessionId2=16ee3fd2-2081-4592-af7d-0de274fe95cf; stsSyncAppName=Client; stsSyncIconPath=; databaseBtnText=0; databaseBtnDesc=0; _InfoPath_Sentinel=1; _InfoPath_CanaryValueAFUNAIHEPRJJIRM342GUZE4BMGYC2L2UJ5HUYUZPKJCVCVKFKNKFGL2FLBBUKUCUJFHU4UZPIZHVETKTF5KEKTKQJRAVIRJOLBJU4KTZMIZWKZ2GORYGKZTTIVHUQT3FJZITC53EINFW4RBUG5UXKMKJJNUG4VTSKFLVKS3HIE=uG2TEcJ9jnR0s96EWLWW4yL+UHIICLVz/AZ28jQ6G2EOzmyGUtClh8r/yDKYtEAW5loNRpY4D0VEd1DTIGzfRQ==|636439601974863152
+
+REQ PAYLOAD:
+1
+11
+FormControl1268
+1 8;2;bdbaf792c2d74b1d9c441d43db4a4645_73fffdb3c7f54a2c9d0ce64895601472;AFUNAIHEPRJJIRM342GUZE4BMGYC2L2UJ5HUYUZPKJCVCVKFKNKFGL2FLBBUKUCUJFHU4UZPIZHVETKTF5KEKTKQJRAVIRJOLBJU4KTZMIZWKZ2GORYGKZTTIVHUQT3FJZITC53EINFW4RBUG5UXKMKJJNUG4VTSKFLVKS3HIE;0;;http%3A%2F%2F2dintranet.2degreesmobile.co.nz%2Ftools%2Frequests%2FExceptions%2FForms%2Ftemplate.xsn;http%3A%2F%2F2dintranet.2degreesmobile.co.nz%2Ftools%2Frequests%2FExceptions%2FForms%2Ftemplate.xsn;http%3A%2F%2F2dintranet.2degreesmobile.co.nz%2Ftools%2Frequests%2FExceptions%2F;http%3A%2F%2F2dintranet.2degreesmobile.co.nz%2Ftools%2Frequests;http%3A%2F%2F2dintranet.2degreesmobile.co.nz%2Ftools%2Frequests%2FExceptions%2FForms%2FMyExceptions.aspx%3FFilterField1%3DID%26FilterValue1%3D60650%26FilterOp1%3DGeq%26OverrideScope%3DRecursiveAll%26FallbackLimit%3D60650%26ProcessQStringToCAML%3D1;1;1;0;1;166;1;636439601974863000;;FormControl;2;5129;1033;0;17;GWFV+qljhkoVBpa3nK4zdEjkFrfe/ZGNaEzTZ6zeTG72rrpiuRzu4KoG5j0ZiNoBwAWTiFmErh5mBHy456JNRg==|636439610404554944 0;V1_I1_D3;;Deneshan%20Naidoo 0;V1_I1_T4;1;2017-10-19 0;V1_I1_D6;;Outbound%20call 12;V1_I1_RTC7_RTI1_RT1;; 12;V1_I1_RTC7_RTI1_RT1;; 12;V1_I1_RTC7_RTI1_RT1;;%3Cdiv%3E220430272%3C%2Fdiv%3E 0;V1_I1_T10;1;09%3A09%3A00 0;V1_I1_T11;1;09%3A13%3A00 1;CTRL15_5;V1_I1;
+
+RESP HEADERS:
+HTTP/1.1 200 OK
+Cache-Control: private
+Content-Type: text/html; charset=utf-8
+Content-Encoding: gzip
+Vary: Accept-Encoding
+Server: Microsoft-IIS/7.5
+SPRequestGuid: d6ad14d9-5311-422f-aa79-86b9b80c178d
+X-SharePointHealthScore: 0
+X-AspNet-Version: 2.0.50727
+Persistent-Auth: true
+X-Powered-By: ASP.NET
+MicrosoftSharePointTeamServices: 14.0.0.7162
+X-MS-InvokeApp: 1; RequireReadOnly
+Date: Wed, 18 Oct 2017 22:04:40 GMT
+Content-Length: 7560
+
+RESP BODY:
+NONE

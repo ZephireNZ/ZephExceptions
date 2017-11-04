@@ -1,0 +1,591 @@
+INITIAL GET REQUEST
+
+REQ HEADERS:
+GET /tools/requests/_layouts/FormServer.aspx?XsnLocation=http://2dintranet.2degreesmobile.co.nz/tools/requests/Exceptions/Forms/template.xsn&SaveLocation=http%3A%2F%2F2dintranet%2E2degreesmobile%2Eco%2Enz%2Ftools%2Frequests%2FExceptions&ClientInstalled=false&Source=http%3A%2F%2F2dintranet%2E2degreesmobile%2Eco%2Enz%2Ftools%2Frequests%2FExceptions%2FForms%2FMyExceptions%2Easpx%3FFilterField1%3DID%26FilterValue1%3D60650%26FilterOp1%3DGeq%26OverrideScope%3DRecursiveAll%26FallbackLimit%3D60650%26ProcessQStringToCAML%3D1&DefaultItemOpen=1 HTTP/1.1
+Host: 2dintranet.2degreesmobile.co.nz
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://2dintranet.2degreesmobile.co.nz/tools/requests/Exceptions/Forms/MyExceptions.aspx?FilterField1=ID&FilterValue1=60650&FilterOp1=Geq&OverrideScope=RecursiveAll&FallbackLimit=60650&ProcessQStringToCAML=1
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.8,en-NZ;q=0.6,en-GB;q=0.4
+Cookie: __IPFS_bdbaf792c2d74b1d9c441d43db4a4645_d0203829766542a1bdc800bc84174cfc_pb=0; __IPFS_bdbaf792c2d74b1d9c441d43db4a4645_d0203829766542a1bdc800bc84174cfc_sel=; sharedSessionValuesHolder=OYqfFbXrUW1OxzYpnmE%2BLUI9PSjU%2Fd1XkS%2FPKw1N5Kw%3D; ORA_OTD_JROUTE=KYZN0U3sw1uH9kXo; _InfoPath_CanaryValueAHGHX7LZ6BTK4QERG2MLZQXUDLQTKL2LIIXUEUSPIFCEEQKOIRFUEL2MJFJVIUZPIZEVQRKEEBJEKRSVJZCFGL2JKRCU2L2UIVGVATCBKRCS4WCTJYVUKTKCPEYEOULQOVKTKRZQOJZEY2LLJIYFKV3BNJIWURDGJE3GWMSUNZGEQN2YJVCWI5CBA=/oqzi+S3mbRuXuzpoG1Cmt/IDyolSxo1asLUgdnnLb3i+HlvzEoizTx//wm/2AcBoQMD3G8+38CLIss1u64K2w==|636438797644422362; 47e34b2c1b934e6fbe616dfc369eea94NZC%5CBrynley%2EMcDonald=0; WebAnalyticsSessionId2=16ee3fd2-2081-4592-af7d-0de274fe95cf; stsSyncAppName=Client; stsSyncIconPath=; databaseBtnText=0; databaseBtnDesc=0; _InfoPath_Sentinel=1; _InfoPath_CanaryValueAFUNAIHEPRJJIRM342GUZE4BMGYC2L2UJ5HUYUZPKJCVCVKFKNKFGL2FLBBUKUCUJFHU4UZPIZHVETKTF5KEKTKQJRAVIRJOLBJU4KTZMIZWKZ2GORYGKZTTIVHUQT3FJZITC53EINFW4RBUG5UXKMKJJNUG4VTSKFLVKS3HIE=LEiR1ZnGDuXKff4fe92IXTLGKNgKz98Q0ycbNDeWRgG4avoWbedm78+R7WvnRFJRfUPrraIgWkwYQHQWp/wuTw==|636439523616500829
+
+REQ PARAMS:
+XsnLocation:http://2dintranet.2degreesmobile.co.nz/tools/requests/Exceptions/Forms/template.xsn
+SaveLocation:http://2dintranet.2degreesmobile.co.nz/tools/requests/Exceptions
+ClientInstalled:false
+Source:http://2dintranet.2degreesmobile.co.nz/tools/requests/Exceptions/Forms/MyExceptions.aspx?FilterField1=ID&FilterValue1=60650&FilterOp1=Geq&OverrideScope=RecursiveAll&FallbackLimit=60650&ProcessQStringToCAML=1
+DefaultItemOpen:1
+
+RESP HEADERS:
+HTTP/1.1 200 OK
+Cache-Control: private
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=utf-8
+Content-Encoding: gzip
+Vary: Accept-Encoding
+Server: Microsoft-IIS/7.5
+SPRequestGuid: 306d50c8-d1b8-495b-9c70-1891d811ffaa
+X-SharePointHealthScore: 0
+X-AspNet-Version: 2.0.50727
+Set-Cookie: _InfoPath_Sentinel=1; path=/
+Set-Cookie: _InfoPath_CanaryValueAFUNAIHEPRJJIRM342GUZE4BMGYC2L2UJ5HUYUZPKJCVCVKFKNKFGL2FLBBUKUCUJFHU4UZPIZHVETKTF5KEKTKQJRAVIRJOLBJU4KTZMIZWKZ2GORYGKZTTIVHUQT3FJZITC53EINFW4RBUG5UXKMKJJNUG4VTSKFLVKS3HIE=uG2TEcJ9jnR0s96EWLWW4yL+UHIICLVz/AZ28jQ6G2EOzmyGUtClh8r/yDKYtEAW5loNRpY4D0VEd1DTIGzfRQ==|636439601974863152; path=/; HttpOnly
+X-Powered-By: ASP.NET
+MicrosoftSharePointTeamServices: 14.0.0.7162
+X-MS-InvokeApp: 1; RequireReadOnly
+Date: Wed, 18 Oct 2017 21:49:56 GMT
+
+RESP BODY:
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Strict//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd'>
+<html lang='en-US'><head><title>Exceptions - New Form</title></head><body scroll="no" class="v4master"  style='margin: 0px;height:100%;'><div style='height:0px'><div id='_InfoPath_WaitUI' style='height:0px'>
+<div style='position:absolute;width:100%'><div style='width:100%;text-align:center;'><div style='height:100px;'></div><table style='margin:125px auto 75px;height:61px;width:300px;border:1px solid #dbdbdb;background-color:white;z-index:2500;' cellpadding='0' cellspacing='0'>
+<tr>
+<td style="padding:16px;border:none;">
+<img src='/_layouts/images/gears_anv4.gif' width='24' height='24' style='border:0px none white' alt='' />
+</td>
+<td style='padding:16px;'>
+<div role='alert' style='font:13px Tahoma;font-weight:normal;color:#676767'>Loading Form...</div>
+</td>
+</tr>
+</table></div></div></div></div></body></html>
+
+<html>
+	<head>
+			<script type="text/javascript">
+
+				var _fV4UI = true;
+			</script>		
+		<script type="text/javascript">
+// <![CDATA[
+document.write('<script type="text/javascript" src="/_layouts/1033/init.js?rev=wgiyW1GQqDQZTITaawvYoA%3D%3D"></' + 'script>');
+document.write('<script type="text/javascript" src="/_layouts/entityeditor.js?rev=%2BfxwLCDtrGzDmNQGmfd0vA%3D%3D"></' + 'script>');
+// ]]>
+</script>
+
+                <script type="text/javascript">firstCalled = false;</script>
+		<link rel="stylesheet" type="text/css" href="/_layouts/1033/styles/Themable/corev4.css?rev=p63%2BuzTeSJc22nVGNZ5zwg%3D%3D"/>
+
+		<script type="text/javascript" src="/SiteAssets/Js/jquery-1.11.3.min.js"></script>
+	<link href="http://2dintranet.2degreesmobile.co.nz/_layouts/FormResource.aspx?solutionId=AFUNAIHEPRJJIRM342GUZE4BMGYC2L2UJ5HUYUZPKJCVCVKFKNKFGL2FLBBUKUCUJFHU4UZPIZHVETKTF5KEKTKQJRAVIRJOLBJU4KTZMIZWKZ2GORYGKZTTIVHUQT3FJZITC53EINFW4RBUG5UXKMKJJNUG4VTSKFLVKS3HIE&amp;view=0&amp;browser=SafariStrict&amp;viewFile=View%2Ecss&amp;version=1" type="text/css" rel="stylesheet" /><link href="/_layouts/1033/styles/Themable/forms.css" type="text/css" rel="stylesheet" /><link href="/_layouts/inc/ifsmain.css?rev=CAZlwz8hb8uFuhGmnCPhKA%3D%3D" type="text/css" rel="stylesheet" /><link rel="stylesheet" type="text/css" href="/_layouts/1033/styles/Themable/corev4.css?rev=p63%2BuzTeSJc22nVGNZ5zwg%3D%3D"/>
+<title>
+
+</title></head>
+
+	<body id="PageBody">
+
+		<form name="HostingForm" method="post" action="FormServer.aspx?XsnLocation=http%3a%2f%2f2dintranet.2degreesmobile.co.nz%2ftools%2frequests%2fExceptions%2fForms%2ftemplate.xsn&amp;SaveLocation=http%3a%2f%2f2dintranet.2degreesmobile.co.nz%2ftools%2frequests%2fExceptions&amp;ClientInstalled=false&amp;Source=http%3a%2f%2f2dintranet.2degreesmobile.co.nz%2ftools%2frequests%2fExceptions%2fForms%2fMyExceptions.aspx%3fFilterField1%3dID%26FilterValue1%3d60650%26FilterOp1%3dGeq%26OverrideScope%3dRecursiveAll%26FallbackLimit%3d60650%26ProcessQStringToCAML%3d1&amp;DefaultItemOpen=1" onsubmit="javascript:return WebForm_OnSubmit();" id="HostingForm" enctype="multipart/form-data" style="width:100%;">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__spPickerHasReturnValue" id="__spPickerHasReturnValue" value="" />
+<input type="hidden" name="__spPickerReturnValueHolder" id="__spPickerReturnValueHolder" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTQ3ODI3NjY4NWQYAQUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgQFJ0Zvcm1Db250cm9sJEZvcm1Db250cm9sX19jdXN0b21jb250cm9sMAUnRm9ybUNvbnRyb2wkRm9ybUNvbnRyb2xfX2N1c3RvbWNvbnRyb2wxBSdGb3JtQ29udHJvbCRGb3JtQ29udHJvbF9fY3VzdG9tY29udHJvbDIFJ0Zvcm1Db250cm9sJEZvcm1Db250cm9sX19jdXN0b21jb250cm9sM9XagNuWhqrCoQX2nzx9bMOkPhsr" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['HostingForm'];
+if (!theForm) {
+    theForm = document.HostingForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=LEhq3Y2SYEhcIw-OmLNLtoLQ3QAr2zoH-yFHCx1VG9d2m8nVOQmKN64jJv89suDes-V_39OrvDaxYjuLH1XQfsjB4EE1&amp;t=636272103501517547" type="text/javascript"></script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+var g_presenceEnabled = true;
+var g_wsaEnabled = false;
+var g_wsaLCID = 1033;
+var g_wsaSiteTemplateId = 'BLANKINTERNET#0';
+var g_wsaListTemplateId = null;
+var _fV4UI=true;var _spPageContextInfo = {webServerRelativeUrl: "\u002ftools\u002frequests", webLanguage: 1033, currentLanguage: 1033, webUIVersion:4,userId:4368, alertsEnabled:true, siteServerRelativeUrl: "\u002f", allowSilverlightPrompt:'True'};//]]>
+</script>
+
+<script src="/WebResource.axd?d=z7L9tUn9M6SjpxLe-kL2dHSN6-3J4NkgL6DZS3UgWz1j_aclKyeIeoStBzv0qJK9B0JQHvG-1lqJwsD4tnqGswa1OI2nRJbqRXaOvhvXuYZ3_E7NnevMaDUhs_L6V7Jt9RiA2U2p0umXAL8TArUYTYHXtck1&amp;t=635092470137364301" type="text/javascript"></script>
+                    <script type="text/javascript">
+                    // <![CDATA[
+                    
+                function CallbackWrapperFormControl_FormControl__customcontrol0(xml)
+                {
+                    if(xml==null)
+                        return;
+
+                    var ctx='FormControl_FormControl__customcontrol0';
+                    EntityEditorCallback(xml,ctx);
+                    // run the custom script
+	                RunCustomScriptSetForPickerControl(ctx);
+                }
+                function __Dialog__FormControl_FormControl__customcontrol0(defaultSearch)
+                    {
+                        if(defaultSearch==undefined)
+                            defaultSearch='';
+                        var sDialogUrl = '\u002ftools\u002frequests\u002f_layouts\u002fPicker.aspx?MultiSelect=False\u0026CustomProperty=User\u00253B\u00253B15\u00253B\u00253B\u00253BFalse\u0026DialogTitle=Select\u002520People\u0026DialogImage=\u00252F\u00255Flayouts\u00252Fimages\u00252Fppeople\u00252Egif\u0026PickerDialogType=Microsoft\u00252ESharePoint\u00252EWebControls\u00252EPeoplePickerDialog\u00252C\u002520Microsoft\u00252ESharePoint\u00252C\u002520Version\u00253D14\u00252E0\u00252E0\u00252E0\u00252C\u002520Culture\u00253Dneutral\u00252C\u002520PublicKeyToken\u00253D71e9bce111e9429c\u0026ForceClaims=False\u0026DisableClaims=False\u0026EnabledClaimProviders=\u0026EntitySeparator=\u00253B\u0025EF\u0025BC\u00259B\u0025EF\u0025B9\u002594\u0025EF\u0025B8\u002594\u0025E2\u00258D\u0025AE\u0025E2\u002581\u00258F\u0025E1\u00258D\u0025A4\u0025D8\u00259B';
+                        sDialogUrl = sDialogUrl + '&DefaultSearch=' + escapeProperly(defaultSearch);
+                        var sFeatures='resizable=yes,status=no,scrollbars=no,menubar=no,directories=no,location=no,width=575px,height=500px';
+
+                        var rv=commonShowModalDialog(sDialogUrl, sFeatures, CallbackWrapperFormControl_FormControl__customcontrol0);
+                    }
+                    // ]]>
+                    </script><script type="text/javascript">
+<!--
+var L_Menu_BaseUrl="/tools/requests";
+var L_Menu_LCID="1033";
+var L_Menu_SiteTheme="";
+//-->
+</script>
+<script type="text/javascript">
+//<![CDATA[
+var EntityEditor_ItemTooLong = 'Item cannot be more than 256 characters.';var L_PleaseWait_TEXT = 'Searching...';var EntityEditor_UseContentEditableControl = false;//]]>
+</script>
+
+                    <script type="text/javascript">
+                    // <![CDATA[
+                    
+                function CallbackWrapperFormControl_FormControl__customcontrol1(xml)
+                {
+                    if(xml==null)
+                        return;
+
+                    var ctx='FormControl_FormControl__customcontrol1';
+                    EntityEditorCallback(xml,ctx);
+                    // run the custom script
+	                RunCustomScriptSetForPickerControl(ctx);
+                }
+                function __Dialog__FormControl_FormControl__customcontrol1(defaultSearch)
+                    {
+                        if(defaultSearch==undefined)
+                            defaultSearch='';
+                        var sDialogUrl = '\u002ftools\u002frequests\u002f_layouts\u002fPicker.aspx?MultiSelect=False\u0026CustomProperty=User\u00253B\u00253B15\u00253B\u00253B\u00253BFalse\u0026DialogTitle=Select\u002520People\u0026DialogImage=\u00252F\u00255Flayouts\u00252Fimages\u00252Fppeople\u00252Egif\u0026PickerDialogType=Microsoft\u00252ESharePoint\u00252EWebControls\u00252EPeoplePickerDialog\u00252C\u002520Microsoft\u00252ESharePoint\u00252C\u002520Version\u00253D14\u00252E0\u00252E0\u00252E0\u00252C\u002520Culture\u00253Dneutral\u00252C\u002520PublicKeyToken\u00253D71e9bce111e9429c\u0026ForceClaims=False\u0026DisableClaims=False\u0026EnabledClaimProviders=\u0026EntitySeparator=\u00253B\u0025EF\u0025BC\u00259B\u0025EF\u0025B9\u002594\u0025EF\u0025B8\u002594\u0025E2\u00258D\u0025AE\u0025E2\u002581\u00258F\u0025E1\u00258D\u0025A4\u0025D8\u00259B';
+                        sDialogUrl = sDialogUrl + '&DefaultSearch=' + escapeProperly(defaultSearch);
+                        var sFeatures='resizable=yes,status=no,scrollbars=no,menubar=no,directories=no,location=no,width=575px,height=500px';
+
+                        var rv=commonShowModalDialog(sDialogUrl, sFeatures, CallbackWrapperFormControl_FormControl__customcontrol1);
+                    }
+                    // ]]>
+                    </script>
+                    <script type="text/javascript">
+                    // <![CDATA[
+                    
+                function CallbackWrapperFormControl_FormControl__customcontrol2(xml)
+                {
+                    if(xml==null)
+                        return;
+
+                    var ctx='FormControl_FormControl__customcontrol2';
+                    EntityEditorCallback(xml,ctx);
+                    // run the custom script
+	                RunCustomScriptSetForPickerControl(ctx);
+                }
+                function __Dialog__FormControl_FormControl__customcontrol2(defaultSearch)
+                    {
+                        if(defaultSearch==undefined)
+                            defaultSearch='';
+                        var sDialogUrl = '\u002ftools\u002frequests\u002f_layouts\u002fPicker.aspx?MultiSelect=False\u0026CustomProperty=User\u00253B\u00253B15\u00253B\u00253B\u00253BFalse\u0026DialogTitle=Select\u002520People\u0026DialogImage=\u00252F\u00255Flayouts\u00252Fimages\u00252Fppeople\u00252Egif\u0026PickerDialogType=Microsoft\u00252ESharePoint\u00252EWebControls\u00252EPeoplePickerDialog\u00252C\u002520Microsoft\u00252ESharePoint\u00252C\u002520Version\u00253D14\u00252E0\u00252E0\u00252E0\u00252C\u002520Culture\u00253Dneutral\u00252C\u002520PublicKeyToken\u00253D71e9bce111e9429c\u0026ForceClaims=False\u0026DisableClaims=False\u0026EnabledClaimProviders=\u0026EntitySeparator=\u00253B\u0025EF\u0025BC\u00259B\u0025EF\u0025B9\u002594\u0025EF\u0025B8\u002594\u0025E2\u00258D\u0025AE\u0025E2\u002581\u00258F\u0025E1\u00258D\u0025A4\u0025D8\u00259B';
+                        sDialogUrl = sDialogUrl + '&DefaultSearch=' + escapeProperly(defaultSearch);
+                        var sFeatures='resizable=yes,status=no,scrollbars=no,menubar=no,directories=no,location=no,width=575px,height=500px';
+
+                        var rv=commonShowModalDialog(sDialogUrl, sFeatures, CallbackWrapperFormControl_FormControl__customcontrol2);
+                    }
+                    // ]]>
+                    </script>
+                    <script type="text/javascript">
+                    // <![CDATA[
+                    
+                function CallbackWrapperFormControl_FormControl__customcontrol3(xml)
+                {
+                    if(xml==null)
+                        return;
+
+                    var ctx='FormControl_FormControl__customcontrol3';
+                    EntityEditorCallback(xml,ctx);
+                    // run the custom script
+	                RunCustomScriptSetForPickerControl(ctx);
+                }
+                function __Dialog__FormControl_FormControl__customcontrol3(defaultSearch)
+                    {
+                        if(defaultSearch==undefined)
+                            defaultSearch='';
+                        var sDialogUrl = '\u002ftools\u002frequests\u002f_layouts\u002fPicker.aspx?MultiSelect=False\u0026CustomProperty=User\u00253B\u00253B15\u00253B\u00253B\u00253BFalse\u0026DialogTitle=Select\u002520People\u0026DialogImage=\u00252F\u00255Flayouts\u00252Fimages\u00252Fppeople\u00252Egif\u0026PickerDialogType=Microsoft\u00252ESharePoint\u00252EWebControls\u00252EPeoplePickerDialog\u00252C\u002520Microsoft\u00252ESharePoint\u00252C\u002520Version\u00253D14\u00252E0\u00252E0\u00252E0\u00252C\u002520Culture\u00253Dneutral\u00252C\u002520PublicKeyToken\u00253D71e9bce111e9429c\u0026ForceClaims=False\u0026DisableClaims=False\u0026EnabledClaimProviders=\u0026EntitySeparator=\u00253B\u0025EF\u0025BC\u00259B\u0025EF\u0025B9\u002594\u0025EF\u0025B8\u002594\u0025E2\u00258D\u0025AE\u0025E2\u002581\u00258F\u0025E1\u00258D\u0025A4\u0025D8\u00259B';
+                        sDialogUrl = sDialogUrl + '&DefaultSearch=' + escapeProperly(defaultSearch);
+                        var sFeatures='resizable=yes,status=no,scrollbars=no,menubar=no,directories=no,location=no,width=575px,height=500px';
+
+                        var rv=commonShowModalDialog(sDialogUrl, sFeatures, CallbackWrapperFormControl_FormControl__customcontrol3);
+                    }
+                    // ]]>
+                    </script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(DeferWebFormInitCallback) == 'function') DeferWebFormInitCallback();function WebForm_OnSubmit() {
+copyUplevelToHidden('FormControl_FormControl__customcontrol0');copyUplevelToHidden('FormControl_FormControl__customcontrol1');copyUplevelToHidden('FormControl_FormControl__customcontrol2');copyUplevelToHidden('FormControl_FormControl__customcontrol3');
+return true;
+}
+//]]>
+</script>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="995E61F8" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWFQLo1u6LBgLb3tyiCALIiYOXAwL5je61BwL1m+7xDgL2tYqDBgLWq/O4CQKLnrzqBQK2uMCBDwKuh+SpDQKly7f+CAL5k4rRAgKSof6QCAL736r5AQLO+Kz5BALUr/e2DgL0wpWiDwLV/7SpDgKIj7LQDAKbqMqnCALb2IDuDKJOHpus3HCN1b5zvLlguplbP3VZ" />
+</div>
+
+			
+
+				<div id="s4-titlerow" style="display:none"></div>
+			
+
+			<div>
+				<div>
+					<div>
+						<div id="FormControl" style="width:100%;">
+	<span>
+<script type="text/javascript"><!--
+function LoadedScriptFiles() {};
+//--></script>
+<script type="text/javascript" src="/_layouts/FormResource.aspx?culture=5129&amp;version=1"></script>
+<script type="text/javascript" src="/_layouts/inc/Core.js?rev=7Clf7cqTzZL022d7GKjp9A%3D%3D"></script>
+<script type="text/javascript" src="/_layouts/DatePicker.js?rev=tjVo%2FpdaNwhS7ZNQbHIGww%3D%3D"></script>
+<script type="text/javascript" src="/_layouts/inc/IntlCoreStrings.js?rev=M7laxuU%2BPsGx0UTwdWI3pw%3D%3D"></script>
+<script type="text/javascript" src="http://2dintranet.2degreesmobile.co.nz/_layouts/FormResource.aspx?solutionId=AFUNAIHEPRJJIRM342GUZE4BMGYC2L2UJ5HUYUZPKJCVCVKFKNKFGL2FLBBUKUCUJFHU4UZPIZHVETKTF5KEKTKQJRAVIRJOLBJU4KTZMIZWKZ2GORYGKZTTIVHUQT3FJZITC53EINFW4RBUG5UXKMKJJNUG4VTSKFLVKS3HIE&amp;view=0&amp;browser=SafariStrict&amp;viewFile=View%2Ejs&amp;version=1"></script>
+<script type="text/javascript"><!--
+UserAgentInfo.strBrowser = 2;
+//--></script>
+<script type="text/javascript"><!--
+UserAgentInfo.strBrowserType = 7;
+//--></script>
+<script type="text/javascript"><!--
+UserAgentInfo.intBrowserRmj = 5;
+//--></script>
+<input value="1" type="hidden" id="FormControl__es" name="FormControl__es" />
+<input value="" type="hidden" id="FormControl__dv" name="FormControl__dv" />
+<input value="" type="hidden" id="FormControl__EventLog" name="FormControl__EventLog" />
+<input value="0" type="hidden" id="FormControl_InfoPathContinueLoading" name="FormControl_InfoPathContinueLoading" />
+<input value="" type="hidden" id="__LastSelection" name="__LastSelection" />
+<input value="" type="hidden" id="__WasSubmitted" name="__WasSubmitted" />
+<input value="" type="hidden" id="__PerformSentinelDetection" name="__PerformSentinelDetection" />
+<div id='FormControl__PostbackCounter' style='display:none'></div><div id="FormControl__XmlFormView" lang="en-US" style="position:relative;zoom:100%;">
+	<div>
+		<div lang="en-NZ" style="padding-left:22px;padding-right:22px;background-color:window;color:windowtext;font-family:Calibri;font-size:10pt;color:black;background-color:window;color:windowtext;font-family:Calibri;font-size:10pt;color:black;background-color:window;color:windowtext;font-family:Calibri;font-size:10pt;color:black;background-color:window;color:windowtext;font-family:Calibri;font-size:10pt;color:black;background-color:window;color:windowtext;font-family:Calibri;font-size:10pt;color:black;background-color:window;color:windowtext;font-family:Calibri;font-size:10pt;color:black;background-color:window;color:windowtext;font-family:Calibri;font-size:10pt;color:black;background-color:window;color:windowtext;font-family:Calibri;font-size:10pt;color:black;; padding-top:16px;padding-bottom:16px;margin-top:1px;margin-bottom:1px;zoom:100%">
+			<div id="FormControl__ViewContainer" onkeypress="return(KeyboardService.OnKeyPress('FormControl', event));" onkeydown="return(KeyboardService.OnKeyDown('FormControl', event));">
+				<noscript>
+					<div style="position:absolute;text-align:center;top:0;left:0;">
+						<div style="width:100%;background-color:#FFFFFF;">
+							<table style="width:447px;height:196px;margin:75px;background-color:#FFFFFF;">
+								<tr>
+									<td><div class="FinalMessageDialog">
+										To edit the form on this page you will need to enable scripting on your computer.
+									</div></td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</noscript>
+			</div>
+		</div>
+<script type="text/javascript"><!--
+var g_objHasFormPostedBack_FormControl=false;var g_objCurrentFormData_FormControl = [[],[1,[[[2,[0,["","","",-1],[[3,["",["","Cannot be blank","",-1],[2],false,false,false],-1,false,false,3],[4,["",["","Cannot be blank","",-1],[0],false,false,false],-1,false,false,3],[5,["",["","Cannot be blank","",-1],["","","Andre Francisco","Andre Francisco","Andy Devlin","Andy Devlin","Angela Turrall","Angela Turrall","Ashwin Carlos","Ashwin Carlos","Callum Healey","Callum Healey","Claudia Sharma","Claudia Sharma","Claudine VanDerVeen","Claudine VanDerVeen","Deneshan Naidoo","Deneshan Naidoo","Eldon Pascual","Eldon Pascual","Eloise Pulido","Eloise Pulido","Emma Topp","Emma Topp","Gemma Kautai","Gemma Kautai","Greg Kessell","Greg Kessell","Helen Iopu","Helen Iopu","Henry Baice","Henry Baice","Jenine Araneta","Jenine Araneta","Joee Ling","Joee Ling","Julyanne Siligi","Julyanne Siligi","Kiran Soysa","Kiran Soysa","Krystal Byrne","Krystal Byrne","Kunal Chandra","Kunal Chandra","Lalit Chauhan","Lalit Chauhan","Laura Herbert","Laura Herbert","Lea Ann Case","Lea Ann Case","Levy Morgan","Levy Morgan","Liam Thomas","Liam Thomas","Lianne Graham","Lianne Graham","Macaulay Wynn","Macaulay Wynn","Margaret Vaiouga","Margaret Vaiouga","Markus Daniel","Markus Daniel","Matthew Ineleo","Matthew Ineleo","Melino Fruean","Melino Fruean","Miguelito Rodriguez","Miguelito Rodriguez","Minhaj Karim","Minhaj Karim","Nick Kumar","Nick Kumar","Parvesh Sethi","Parvesh Sethi","Prajakta Chaukekar","Prajakta Chaukekar","Prasanth Nair","Prasanth Nair","Ragini Thangella","Ragini Thangella","Rebecca Pocock","Rebecca Pocock","Reina Sancho","Reina Sancho","Rohan Sinclair","Rohan Sinclair","Rylan Rana","Rylan Rana","Sala Tangimama","Sala Tangimama","Samantha Fenton","Samantha Fenton","Samantha Ineleo","Samantha Ineleo","Scott Mulholland","Scott Mulholland","Sid Chhabra","Sid Chhabra","Sohel Khan","Sohel Khan","Sol Coad","Sol Coad","Sonal Kumar","Sonal Kumar","Tessa Sherwen","Tessa Sherwen","Trevor Siliva","Trevor Siliva","Vandana Kadian","Vandana Kadian","Vijay Dhabale","Vijay Dhabale","Vilma Austria","Vilma Austria","Zahra Al-Aaraji","Zahra Al-Aaraji"],false,false,false],-1,false,false,3],[6,["",["","","",-1],[],false,false,false],-1,false,false,3],[7,["",["","","",-1],[],true,false,false],-1,false,false,3],[8,["",["","Cannot be blank","",-1],[],false,false,false],-1,false,false,3],[9,[[[10,[0,["","","",-1],[[11,["",["","","",-1],[],false,false,false],-1,false,false,3]],false],-1,false,false,3]],false,0,[1],false],-1,false,false,3],[12,["",["","","",-1],[],false,false,false],-1,false,false,3],[13,["",["","","",-1],[],false,false,false],-1,false,false,3],[14,["",["","Only time allowed","",-1],[],false,false,false],-1,false,false,3],[15,["",["","Only time allowed","",-1],[],false,false,false],-1,false,false,3],[16,["",["","","",-1],["Close form"],true,false,false],-1,false,false,3],[17,["",["","","",-1],["Submit"],true,false,false],-1,false,false,3],[18,[[[19,[0,["\n\n\n\n","","",-1],[[20,["",["","","",-1],[],false,false,false],-1,false,false,3]],false],-1,false,false,3]],false,0,[2],false],-1,false,false,3],[21,[[[22,[0,["\n\n\n\n","","",-1],[[23,["",["","","",-1],[],false,false,false],-1,false,false,3]],false],-1,false,false,3]],false,0,[3],false],-1,false,false,3]],false],-1,false,false,3]],false,[0,0],[1],false],-1,false,false,3],0,"bdbaf792c2d74b1d9c441d43db4a4645_73fffdb3c7f54a2c9d0ce64895601472","AFUNAIHEPRJJIRM342GUZE4BMGYC2L2UJ5HUYUZPKJCVCVKFKNKFGL2FLBBUKUCUJFHU4UZPIZHVETKTF5KEKTKQJRAVIRJOLBJU4KTZMIZWKZ2GORYGKZTTIVHUQT3FJZITC53EINFW4RBUG5UXKMKJJNUG4VTSKFLVKS3HIE",5129,"2017-10-19T10:49:57","2017-10-19",["0","","http:\u002f\u002f2dintranet.2degreesmobile.co.nz\u002ftools\u002frequests\u002fExceptions\u002fForms\u002ftemplate.xsn","http:\u002f\u002f2dintranet.2degreesmobile.co.nz\u002ftools\u002frequests\u002fExceptions\u002f","http:\u002f\u002f2dintranet.2degreesmobile.co.nz\u002ftools\u002frequests\u002fExceptions\u002fForms\u002ftemplate.xsn","http:\u002f\u002f2dintranet.2degreesmobile.co.nz\u002ftools\u002frequests\u002fExceptions\u002fForms\u002fMyExceptions.aspx?FilterField1=ID\u0026FilterValue1=60650\u0026FilterOp1=Geq\u0026OverrideScope=RecursiveAll\u0026FallbackLimit=60650\u0026ProcessQStringToCAML=1",1,0,"FormControl",0,false],"View 1",0,false,"Exceptions - New Form",1,"","http:\u002f\u002f2dintranet.2degreesmobile.co.nz","ltr","http:\u002f\u002f2dintranet.2degreesmobile.co.nz\u002ftools\u002frequests",6.36439601974863E+17,"779","",false,1033,"http:\u002f\u002f2dintranet.2degreesmobile.co.nz",[["FormControl__customcontrol0","hiddenSpanData","false","\u003cEntities Append=\u0022False\u0022 Error=\u0022\u0022 DoEncodeErrorMessage=\u0022True\u0022 Separator=\u0022;\u0022 MaxHeight=\u00223\u0022 \u002f\u003e"],["FormControl__customcontrol1","hiddenSpanData","false","\u003cEntities Append=\u0022False\u0022 Error=\u0022\u0022 DoEncodeErrorMessage=\u0022True\u0022 Separator=\u0022;\u0022 MaxHeight=\u00223\u0022 \u002f\u003e"],["FormControl__customcontrol2","hiddenSpanData","false","\u003cEntities Append=\u0022False\u0022 Error=\u0022\u0022 DoEncodeErrorMessage=\u0022True\u0022 Separator=\u0022;\u0022 MaxHeight=\u00223\u0022 \u002f\u003e"],["FormControl__customcontrol3","hiddenSpanData","false","\u003cEntities Append=\u0022False\u0022 Error=\u0022\u0022 DoEncodeErrorMessage=\u0022True\u0022 Separator=\u0022;\u0022 MaxHeight=\u00223\u0022 \u002f\u003e"]],false,true,"","","2",false,"",false,17,"","","","uG2TEcJ9jnR0s96EWLWW4yL\u002bUHIICLVz\u002fAZ28jQ6G2EOzmyGUtClh8r\u002fyDKYtEAW5loNRpY4D0VEd1DTIGzfRQ==|636439601974863152"];
+var g_objCurrentFormDataSelection = null;
+//--></script>
+<img src="/_layouts/images/gears_anv4.gif" alt="" style="display:none" />
+<img src="/_layouts/inc/MergedImage1.gif?rev=SMKQuY2p4ggU9UPgnSugfw%3D%3D" alt="" style="display:none" />
+<img src="/_layouts/images/calendar.gif?rev=cjOkHi%2F9%2BoJ5rW46Awmgfw%3D%3D" alt="" style="display:none" />
+<img src="/_layouts/inc/MergedImage2.png?rev=MgwMZrsJcX2hRvGHEYkZlQ%3D%3D" alt="" style="display:none" />
+</div>
+</div>
+<div id='FormControl__DialogTable' class='DialogFrame' class0='DialogFrame' class1='DialogFrame TranslucentWssDialog' class2='DialogFrame SolidWhite' style='width:100%;height:100%;'>
+<div id='FormControl__DialogSemiTransparent' class='ms-dlgOverlay' style='height: 100%; width:100%; display: none;'>&nbsp;</div>
+<table style='width:100%;height:100%;'>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style='width:35px'></td>
+<td style='text-align:center;vertical-align:middle'>
+<span style='position:relative;display:inline-block'>
+<div id='FormControl__DialogContainer' class='DialogContainer' style='position:relative;top:0px;left:0px;z-index:500;'>
+</div>
+</span>
+</td>
+<td style='width:35px'></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><input id='FormControl__DialogFocusRetainer' autocomplete='off' style='width:0px;height:0px;border:none;padding:0;border:0;position:absolute' type='text' tabindex='-1' aria-hidden='true' /></td>
+</tr>
+</table>
+</div></span>
+</div><span id="FormControl_FormControl__databoundcontrol00"><span><span id="FormControl_FormControl__customcontrol0" preferContentEditableDiv="true" editorOldValue="" RemoveText="Remove" value="" NoMatchesText="&lt;No Matching Names>" allowEmpty="1" OnActivate="if(typeof(ExternalOnFocus)=='function') { ExternalOnFocus('FormControl_FormControl__customcontrol0');}" MoreItemsText="More Names..." showDataValidationErrorBorder="false" EEAfterCallbackClientScript="" inValidate="false" allowTypeIn="true" ShowEntityDisplayTextInTextBox="0" style="display:inline-block;height:25px;width:100%;display:none;"><input name="FormControl$FormControl__customcontrol0$hiddenSpanData" type="hidden" id="FormControl_FormControl__customcontrol0_hiddenSpanData" /><input name="FormControl$FormControl__customcontrol0$OriginalEntities" type="hidden" id="FormControl_FormControl__customcontrol0_OriginalEntities" value="&lt;Entities />" /><input name="FormControl$FormControl__customcontrol0$HiddenEntityKey" type="hidden" id="FormControl_FormControl__customcontrol0_HiddenEntityKey" /><input name="FormControl$FormControl__customcontrol0$HiddenEntityDisplayText" type="hidden" id="FormControl_FormControl__customcontrol0_HiddenEntityDisplayText" /><table id="FormControl_FormControl__customcontrol0_OuterTable" class="ms-usereditor" cellspacing="0" cellpadding="0" border="0" style="width:100%;border-collapse:collapse;">
+	<tr valign="bottom">
+		<td valign="top" style="width:88%;"><table cellpadding="0" cellspacing="0" border="0" style="width:100%;table-layout:fixed;">
+			<tr>
+				<td id="FormControl_FormControl__customcontrol0_containerCell"><div id="FormControl_FormControl__customcontrol0_upLevelDiv" tabindex="0" onfocus="StoreOldValue('FormControl_FormControl__customcontrol0');saveOldEntities('FormControl_FormControl__customcontrol0');" onclick="onClickRw(true, true,event,'FormControl_FormControl__customcontrol0');" onchange="CustomControl_OnValueChanged(&quot;FormControl_FormControl__customcontrol0&quot;);" onPaste="dopaste('FormControl_FormControl__customcontrol0',event);" isBlankRuleSet="true" AutoPostBack="0" class="ms-inputuserfield" onDragStart="canEvt(event);" rows="1" onkeyup="return onKeyUpRw('FormControl_FormControl__customcontrol0');" onCopy="docopy('FormControl_FormControl__customcontrol0',event);" onblur="if(typeof(ExternalCustomControlCallback)=='function'){ if(ShouldCallCustomCallBack('FormControl_FormControl__customcontrol0',event)){if(!ValidatePickerControl('FormControl_FormControl__customcontrol0')){ShowValidationError();return false;}else {ExternalCustomControlCallback('FormControl_FormControl__customcontrol0');}}}" title="People Picker" onkeydown="return onKeyDownRw('FormControl_FormControl__customcontrol0', 3, true, event);" aria-multiline="true" contentEditable="true" onvaluesetfrompicker="CustomControl_OnValueChanged(&quot;FormControl_FormControl__customcontrol0&quot;);" aria-haspopup="true" style="word-wrap: break-word;overflow-x: hidden; background-color: window; color: windowtext;" preferContentEditableDiv="true" name="upLevelDiv" role="textbox"></div><textarea name="FormControl$FormControl__customcontrol0$downlevelTextBox" rows="1" cols="20" id="FormControl_FormControl__customcontrol0_downlevelTextBox" class="ms-inputuserfield" AutoPostBack="0" onkeyup="return onKeyUpRw('FormControl_FormControl__customcontrol0');" title="People Picker" onfocus="StoreOldValue('FormControl_FormControl__customcontrol0');saveOldEntities('FormControl_FormControl__customcontrol0');" onblur="if(typeof(ExternalCustomControlCallback)=='function'){ if(ShouldCallCustomCallBack('FormControl_FormControl__customcontrol0',event)){if(!ValidatePickerControl('FormControl_FormControl__customcontrol0')){ShowValidationError();return false;}else {ExternalCustomControlCallback('FormControl_FormControl__customcontrol0');}}}" onkeydown="return onKeyDownRw('FormControl_FormControl__customcontrol0', 3, true, event);" onvaluesetfrompicker="CustomControl_OnValueChanged(&quot;FormControl_FormControl__customcontrol0&quot;);" renderAsContentEditableDiv="true" onchange="CustomControl_OnValueChanged(&quot;FormControl_FormControl__customcontrol0&quot;);" style="width:100%;display: none;position: absolute; "></textarea></td>
+			</tr>
+		</table></td><td align="center" valign="top" nowrap="true" style="padding-left:5px;padding-right:5px;"><a id="FormControl_FormControl__customcontrol0_checkNames" title="Check Names" onclick=" if(!ValidatePickerControl('FormControl_FormControl__customcontrol0')){ ShowValidationError(); return false;} var arg=getUplevel('FormControl_FormControl__customcontrol0'); var ctx='FormControl_FormControl__customcontrol0';EntityEditorSetWaitCursor(ctx);WebForm_DoCallback('FormControl$FormControl__customcontrol0',arg,EntityEditorHandleCheckNameResult,ctx,EntityEditorHandleCheckNameError,true);return false;" href="javascript:"><img title="Check Names" src="/_layouts/images/checknames.png" alt="Check Names" style="border-width:0px;" /></a>&#160;<a id="FormControl_FormControl__customcontrol0_browse" title="Browse" onclick="__Dialog__FormControl_FormControl__customcontrol0(); return false;" href="javascript:"><img title="Browse" src="/_layouts/images/addressbook.gif" alt="Browse" style="border-width:0px;" /></a></td><td id="FormControl_FormControl__customcontrol0_asterixCell" align="right" valign="top" nowrap="true" style="padding-left:2px;"><span display="inline" position="absolute"><div style="display: inline-block; vertical-align:top;overflow: hidden; width: 9px; position: relative;height: 10px"> <img style="left: -46px; position: absolute; top: -10px" alt="" src="/_layouts/inc/MergedImage1.gif"/></div></span></td>
+	</tr><tr>
+		<td colspan="3"><span id="FormControl_FormControl__customcontrol0_errorLabel" class="ms-error"></span></td>
+	</tr>
+</table></span></span></span><span id="FormControl_FormControl__databoundcontrol11"><span><span id="FormControl_FormControl__customcontrol1" preferContentEditableDiv="true" editorOldValue="" RemoveText="Remove" value="" NoMatchesText="&lt;No Matching Names>" allowEmpty="1" OnActivate="if(typeof(ExternalOnFocus)=='function') { ExternalOnFocus('FormControl_FormControl__customcontrol1');}" MoreItemsText="More Names..." showDataValidationErrorBorder="false" EEAfterCallbackClientScript="" inValidate="false" allowTypeIn="true" ShowEntityDisplayTextInTextBox="0" style="display:inline-block;height:25px;width:100%;display:none;"><input name="FormControl$FormControl__customcontrol1$hiddenSpanData" type="hidden" id="FormControl_FormControl__customcontrol1_hiddenSpanData" /><input name="FormControl$FormControl__customcontrol1$OriginalEntities" type="hidden" id="FormControl_FormControl__customcontrol1_OriginalEntities" value="&lt;Entities />" /><input name="FormControl$FormControl__customcontrol1$HiddenEntityKey" type="hidden" id="FormControl_FormControl__customcontrol1_HiddenEntityKey" /><input name="FormControl$FormControl__customcontrol1$HiddenEntityDisplayText" type="hidden" id="FormControl_FormControl__customcontrol1_HiddenEntityDisplayText" /><table id="FormControl_FormControl__customcontrol1_OuterTable" class="ms-usereditor" cellspacing="0" cellpadding="0" border="0" style="width:100%;border-collapse:collapse;">
+	<tr valign="bottom">
+		<td valign="top" style="width:88%;"><table cellpadding="0" cellspacing="0" border="0" style="width:100%;table-layout:fixed;">
+			<tr>
+				<td id="FormControl_FormControl__customcontrol1_containerCell"><div id="FormControl_FormControl__customcontrol1_upLevelDiv" tabindex="0" onfocus="StoreOldValue('FormControl_FormControl__customcontrol1');saveOldEntities('FormControl_FormControl__customcontrol1');" onclick="onClickRw(true, true,event,'FormControl_FormControl__customcontrol1');" onchange="CustomControl_OnValueChanged(&quot;FormControl_FormControl__customcontrol1&quot;);" onPaste="dopaste('FormControl_FormControl__customcontrol1',event);" isBlankRuleSet="true" AutoPostBack="0" class="ms-inputuserfield" onDragStart="canEvt(event);" rows="1" onkeyup="return onKeyUpRw('FormControl_FormControl__customcontrol1');" onCopy="docopy('FormControl_FormControl__customcontrol1',event);" onblur="if(typeof(ExternalCustomControlCallback)=='function'){ if(ShouldCallCustomCallBack('FormControl_FormControl__customcontrol1',event)){if(!ValidatePickerControl('FormControl_FormControl__customcontrol1')){ShowValidationError();return false;}else {ExternalCustomControlCallback('FormControl_FormControl__customcontrol1');}}}" title="People Picker" onkeydown="return onKeyDownRw('FormControl_FormControl__customcontrol1', 3, true, event);" aria-multiline="true" contentEditable="true" onvaluesetfrompicker="CustomControl_OnValueChanged(&quot;FormControl_FormControl__customcontrol1&quot;);" aria-haspopup="true" style="word-wrap: break-word;overflow-x: hidden; background-color: window; color: windowtext;" preferContentEditableDiv="true" name="upLevelDiv" role="textbox"></div><textarea name="FormControl$FormControl__customcontrol1$downlevelTextBox" rows="1" cols="20" id="FormControl_FormControl__customcontrol1_downlevelTextBox" class="ms-inputuserfield" AutoPostBack="0" onkeyup="return onKeyUpRw('FormControl_FormControl__customcontrol1');" title="People Picker" onfocus="StoreOldValue('FormControl_FormControl__customcontrol1');saveOldEntities('FormControl_FormControl__customcontrol1');" onblur="if(typeof(ExternalCustomControlCallback)=='function'){ if(ShouldCallCustomCallBack('FormControl_FormControl__customcontrol1',event)){if(!ValidatePickerControl('FormControl_FormControl__customcontrol1')){ShowValidationError();return false;}else {ExternalCustomControlCallback('FormControl_FormControl__customcontrol1');}}}" onkeydown="return onKeyDownRw('FormControl_FormControl__customcontrol1', 3, true, event);" onvaluesetfrompicker="CustomControl_OnValueChanged(&quot;FormControl_FormControl__customcontrol1&quot;);" renderAsContentEditableDiv="true" onchange="CustomControl_OnValueChanged(&quot;FormControl_FormControl__customcontrol1&quot;);" style="width:100%;display: none;position: absolute; "></textarea></td>
+			</tr>
+		</table></td><td align="center" valign="top" nowrap="true" style="padding-left:5px;padding-right:5px;"><a id="FormControl_FormControl__customcontrol1_checkNames" title="Check Names" onclick=" if(!ValidatePickerControl('FormControl_FormControl__customcontrol1')){ ShowValidationError(); return false;} var arg=getUplevel('FormControl_FormControl__customcontrol1'); var ctx='FormControl_FormControl__customcontrol1';EntityEditorSetWaitCursor(ctx);WebForm_DoCallback('FormControl$FormControl__customcontrol1',arg,EntityEditorHandleCheckNameResult,ctx,EntityEditorHandleCheckNameError,true);return false;" href="javascript:"><img title="Check Names" src="/_layouts/images/checknames.png" alt="Check Names" style="border-width:0px;" /></a>&#160;<a id="FormControl_FormControl__customcontrol1_browse" title="Browse" onclick="__Dialog__FormControl_FormControl__customcontrol1(); return false;" href="javascript:"><img title="Browse" src="/_layouts/images/addressbook.gif" alt="Browse" style="border-width:0px;" /></a></td><td id="FormControl_FormControl__customcontrol1_asterixCell" align="right" valign="top" nowrap="true" style="padding-left:2px;"><span display="inline" position="absolute"><div style="display: inline-block; vertical-align:top;overflow: hidden; width: 9px; position: relative;height: 10px"> <img style="left: -46px; position: absolute; top: -10px" alt="" src="/_layouts/inc/MergedImage1.gif"/></div></span></td>
+	</tr><tr>
+		<td colspan="3"><span id="FormControl_FormControl__customcontrol1_errorLabel" class="ms-error"></span></td>
+	</tr>
+</table></span></span></span><span id="FormControl_FormControl__databoundcontrol22"><span><span id="FormControl_FormControl__customcontrol2" preferContentEditableDiv="true" editorOldValue="" RemoveText="Remove" value="" NoMatchesText="&lt;No Matching Names>" allowEmpty="1" OnActivate="if(typeof(ExternalOnFocus)=='function') { ExternalOnFocus('FormControl_FormControl__customcontrol2');}" MoreItemsText="More Names..." showDataValidationErrorBorder="false" EEAfterCallbackClientScript="" inValidate="false" allowTypeIn="true" ShowEntityDisplayTextInTextBox="0" style="display:inline-block;height:23px;width:100%;display:none;"><input name="FormControl$FormControl__customcontrol2$hiddenSpanData" type="hidden" id="FormControl_FormControl__customcontrol2_hiddenSpanData" /><input name="FormControl$FormControl__customcontrol2$OriginalEntities" type="hidden" id="FormControl_FormControl__customcontrol2_OriginalEntities" value="&lt;Entities />" /><input name="FormControl$FormControl__customcontrol2$HiddenEntityKey" type="hidden" id="FormControl_FormControl__customcontrol2_HiddenEntityKey" /><input name="FormControl$FormControl__customcontrol2$HiddenEntityDisplayText" type="hidden" id="FormControl_FormControl__customcontrol2_HiddenEntityDisplayText" /><table id="FormControl_FormControl__customcontrol2_OuterTable" class="ms-usereditor" cellspacing="0" cellpadding="0" border="0" style="width:100%;border-collapse:collapse;">
+	<tr valign="bottom">
+		<td valign="top" style="width:88%;"><table cellpadding="0" cellspacing="0" border="0" style="width:100%;table-layout:fixed;">
+			<tr>
+				<td id="FormControl_FormControl__customcontrol2_containerCell"><div id="FormControl_FormControl__customcontrol2_upLevelDiv" tabindex="0" onfocus="StoreOldValue('FormControl_FormControl__customcontrol2');saveOldEntities('FormControl_FormControl__customcontrol2');" onclick="onClickRw(true, true,event,'FormControl_FormControl__customcontrol2');" onchange="CustomControl_OnValueChanged(&quot;FormControl_FormControl__customcontrol2&quot;);" onPaste="dopaste('FormControl_FormControl__customcontrol2',event);" isBlankRuleSet="true" AutoPostBack="0" class="ms-inputuserfield" onDragStart="canEvt(event);" rows="1" onkeyup="return onKeyUpRw('FormControl_FormControl__customcontrol2');" onCopy="docopy('FormControl_FormControl__customcontrol2',event);" onblur="if(typeof(ExternalCustomControlCallback)=='function'){ if(ShouldCallCustomCallBack('FormControl_FormControl__customcontrol2',event)){if(!ValidatePickerControl('FormControl_FormControl__customcontrol2')){ShowValidationError();return false;}else {ExternalCustomControlCallback('FormControl_FormControl__customcontrol2');}}}" title="People Picker" onkeydown="return onKeyDownRw('FormControl_FormControl__customcontrol2', 3, true, event);" aria-multiline="true" contentEditable="true" onvaluesetfrompicker="CustomControl_OnValueChanged(&quot;FormControl_FormControl__customcontrol2&quot;);" aria-haspopup="true" style="word-wrap: break-word;overflow-x: hidden; background-color: window; color: windowtext;" preferContentEditableDiv="true" name="upLevelDiv" role="textbox"></div><textarea name="FormControl$FormControl__customcontrol2$downlevelTextBox" rows="1" cols="20" id="FormControl_FormControl__customcontrol2_downlevelTextBox" class="ms-inputuserfield" AutoPostBack="0" onkeyup="return onKeyUpRw('FormControl_FormControl__customcontrol2');" title="People Picker" onfocus="StoreOldValue('FormControl_FormControl__customcontrol2');saveOldEntities('FormControl_FormControl__customcontrol2');" onblur="if(typeof(ExternalCustomControlCallback)=='function'){ if(ShouldCallCustomCallBack('FormControl_FormControl__customcontrol2',event)){if(!ValidatePickerControl('FormControl_FormControl__customcontrol2')){ShowValidationError();return false;}else {ExternalCustomControlCallback('FormControl_FormControl__customcontrol2');}}}" onkeydown="return onKeyDownRw('FormControl_FormControl__customcontrol2', 3, true, event);" onvaluesetfrompicker="CustomControl_OnValueChanged(&quot;FormControl_FormControl__customcontrol2&quot;);" renderAsContentEditableDiv="true" onchange="CustomControl_OnValueChanged(&quot;FormControl_FormControl__customcontrol2&quot;);" style="width:100%;display: none;position: absolute; "></textarea></td>
+			</tr>
+		</table></td><td align="center" valign="top" nowrap="true" style="padding-left:5px;padding-right:5px;"><a id="FormControl_FormControl__customcontrol2_checkNames" title="Check Names" onclick=" if(!ValidatePickerControl('FormControl_FormControl__customcontrol2')){ ShowValidationError(); return false;} var arg=getUplevel('FormControl_FormControl__customcontrol2'); var ctx='FormControl_FormControl__customcontrol2';EntityEditorSetWaitCursor(ctx);WebForm_DoCallback('FormControl$FormControl__customcontrol2',arg,EntityEditorHandleCheckNameResult,ctx,EntityEditorHandleCheckNameError,true);return false;" href="javascript:"><img title="Check Names" src="/_layouts/images/checknames.png" alt="Check Names" style="border-width:0px;" /></a>&#160;<a id="FormControl_FormControl__customcontrol2_browse" title="Browse" onclick="__Dialog__FormControl_FormControl__customcontrol2(); return false;" href="javascript:"><img title="Browse" src="/_layouts/images/addressbook.gif" alt="Browse" style="border-width:0px;" /></a></td><td id="FormControl_FormControl__customcontrol2_asterixCell" align="right" valign="top" nowrap="true" style="padding-left:2px;"><span display="inline" position="absolute"><div style="display: inline-block; vertical-align:top;overflow: hidden; width: 9px; position: relative;height: 10px"> <img style="left: -46px; position: absolute; top: -10px" alt="" src="/_layouts/inc/MergedImage1.gif"/></div></span></td>
+	</tr><tr>
+		<td colspan="3"><span id="FormControl_FormControl__customcontrol2_errorLabel" class="ms-error"></span></td>
+	</tr>
+</table></span></span></span><span id="FormControl_FormControl__databoundcontrol33"><span><span id="FormControl_FormControl__customcontrol3" preferContentEditableDiv="true" editorOldValue="" RemoveText="Remove" value="" NoMatchesText="&lt;No Matching Names>" allowEmpty="1" OnActivate="if(typeof(ExternalOnFocus)=='function') { ExternalOnFocus('FormControl_FormControl__customcontrol3');}" MoreItemsText="More Names..." showDataValidationErrorBorder="false" EEAfterCallbackClientScript="" inValidate="false" allowTypeIn="true" ShowEntityDisplayTextInTextBox="0" style="display:inline-block;height:23px;width:100%;display:none;"><input name="FormControl$FormControl__customcontrol3$hiddenSpanData" type="hidden" id="FormControl_FormControl__customcontrol3_hiddenSpanData" /><input name="FormControl$FormControl__customcontrol3$OriginalEntities" type="hidden" id="FormControl_FormControl__customcontrol3_OriginalEntities" value="&lt;Entities />" /><input name="FormControl$FormControl__customcontrol3$HiddenEntityKey" type="hidden" id="FormControl_FormControl__customcontrol3_HiddenEntityKey" /><input name="FormControl$FormControl__customcontrol3$HiddenEntityDisplayText" type="hidden" id="FormControl_FormControl__customcontrol3_HiddenEntityDisplayText" /><table id="FormControl_FormControl__customcontrol3_OuterTable" class="ms-usereditor" cellspacing="0" cellpadding="0" border="0" style="width:100%;border-collapse:collapse;">
+	<tr valign="bottom">
+		<td valign="top" style="width:88%;"><table cellpadding="0" cellspacing="0" border="0" style="width:100%;table-layout:fixed;">
+			<tr>
+				<td id="FormControl_FormControl__customcontrol3_containerCell"><div id="FormControl_FormControl__customcontrol3_upLevelDiv" tabindex="0" onfocus="StoreOldValue('FormControl_FormControl__customcontrol3');saveOldEntities('FormControl_FormControl__customcontrol3');" onclick="onClickRw(true, true,event,'FormControl_FormControl__customcontrol3');" onchange="CustomControl_OnValueChanged(&quot;FormControl_FormControl__customcontrol3&quot;);" onPaste="dopaste('FormControl_FormControl__customcontrol3',event);" isBlankRuleSet="true" AutoPostBack="0" class="ms-inputuserfield" onDragStart="canEvt(event);" rows="1" onkeyup="return onKeyUpRw('FormControl_FormControl__customcontrol3');" onCopy="docopy('FormControl_FormControl__customcontrol3',event);" onblur="if(typeof(ExternalCustomControlCallback)=='function'){ if(ShouldCallCustomCallBack('FormControl_FormControl__customcontrol3',event)){if(!ValidatePickerControl('FormControl_FormControl__customcontrol3')){ShowValidationError();return false;}else {ExternalCustomControlCallback('FormControl_FormControl__customcontrol3');}}}" title="People Picker" onkeydown="return onKeyDownRw('FormControl_FormControl__customcontrol3', 3, true, event);" aria-multiline="true" contentEditable="true" onvaluesetfrompicker="CustomControl_OnValueChanged(&quot;FormControl_FormControl__customcontrol3&quot;);" aria-haspopup="true" style="word-wrap: break-word;overflow-x: hidden; background-color: window; color: windowtext;" preferContentEditableDiv="true" name="upLevelDiv" role="textbox"></div><textarea name="FormControl$FormControl__customcontrol3$downlevelTextBox" rows="1" cols="20" id="FormControl_FormControl__customcontrol3_downlevelTextBox" class="ms-inputuserfield" AutoPostBack="0" onkeyup="return onKeyUpRw('FormControl_FormControl__customcontrol3');" title="People Picker" onfocus="StoreOldValue('FormControl_FormControl__customcontrol3');saveOldEntities('FormControl_FormControl__customcontrol3');" onblur="if(typeof(ExternalCustomControlCallback)=='function'){ if(ShouldCallCustomCallBack('FormControl_FormControl__customcontrol3',event)){if(!ValidatePickerControl('FormControl_FormControl__customcontrol3')){ShowValidationError();return false;}else {ExternalCustomControlCallback('FormControl_FormControl__customcontrol3');}}}" onkeydown="return onKeyDownRw('FormControl_FormControl__customcontrol3', 3, true, event);" onvaluesetfrompicker="CustomControl_OnValueChanged(&quot;FormControl_FormControl__customcontrol3&quot;);" renderAsContentEditableDiv="true" onchange="CustomControl_OnValueChanged(&quot;FormControl_FormControl__customcontrol3&quot;);" style="width:100%;display: none;position: absolute; "></textarea></td>
+			</tr>
+		</table></td><td align="center" valign="top" nowrap="true" style="padding-left:5px;padding-right:5px;"><a id="FormControl_FormControl__customcontrol3_checkNames" title="Check Names" onclick=" if(!ValidatePickerControl('FormControl_FormControl__customcontrol3')){ ShowValidationError(); return false;} var arg=getUplevel('FormControl_FormControl__customcontrol3'); var ctx='FormControl_FormControl__customcontrol3';EntityEditorSetWaitCursor(ctx);WebForm_DoCallback('FormControl$FormControl__customcontrol3',arg,EntityEditorHandleCheckNameResult,ctx,EntityEditorHandleCheckNameError,true);return false;" href="javascript:"><img title="Check Names" src="/_layouts/images/checknames.png" alt="Check Names" style="border-width:0px;" /></a>&#160;<a id="FormControl_FormControl__customcontrol3_browse" title="Browse" onclick="__Dialog__FormControl_FormControl__customcontrol3(); return false;" href="javascript:"><img title="Browse" src="/_layouts/images/addressbook.gif" alt="Browse" style="border-width:0px;" /></a></td><td id="FormControl_FormControl__customcontrol3_asterixCell" align="right" valign="top" nowrap="true" style="padding-left:2px;"><span display="inline" position="absolute"><div style="display: inline-block; vertical-align:top;overflow: hidden; width: 9px; position: relative;height: 10px"> <img style="left: -46px; position: absolute; top: -10px" alt="" src="/_layouts/inc/MergedImage1.gif"/></div></span></td>
+	</tr><tr>
+		<td colspan="3"><span id="FormControl_FormControl__customcontrol3_errorLabel" class="ms-error"></span></td>
+	</tr>
+</table></span></span></span>				
+																
+					</div>
+				</div>
+			</div>
+		
+
+<script type="text/javascript">
+//<![CDATA[
+
+WebForm_InitCallback();var currentEntityEditorXml='\u003cEntities Append=\u0022False\u0022 Error=\u0022\u0022 DoEncodeErrorMessage=\u0022True\u0022 Separator=\u0022;\u0022 MaxHeight=\u00223\u0022 \u002f\u003e';
+var currentEntityEditorContextId='FormControl_FormControl__customcontrol0';
+EnsureScriptParams('entityeditor.js', 'EntityEditorCallback', currentEntityEditorXml, currentEntityEditorContextId, true);PickerAdjustHeight('FormControl_FormControl__customcontrol0', 3);var currentEntityEditorXml='\u003cEntities Append=\u0022False\u0022 Error=\u0022\u0022 DoEncodeErrorMessage=\u0022True\u0022 Separator=\u0022;\u0022 MaxHeight=\u00223\u0022 \u002f\u003e';
+var currentEntityEditorContextId='FormControl_FormControl__customcontrol0';
+EnsureScriptParams('entityeditor.js', 'EntityEditorCallback', currentEntityEditorXml, currentEntityEditorContextId, true);var currentEntityEditorXml='\u003cEntities Append=\u0022False\u0022 Error=\u0022\u0022 DoEncodeErrorMessage=\u0022True\u0022 Separator=\u0022;\u0022 MaxHeight=\u00223\u0022 \u002f\u003e';
+var currentEntityEditorContextId='FormControl_FormControl__customcontrol1';
+EnsureScriptParams('entityeditor.js', 'EntityEditorCallback', currentEntityEditorXml, currentEntityEditorContextId, true);PickerAdjustHeight('FormControl_FormControl__customcontrol1', 3);var currentEntityEditorXml='\u003cEntities Append=\u0022False\u0022 Error=\u0022\u0022 DoEncodeErrorMessage=\u0022True\u0022 Separator=\u0022;\u0022 MaxHeight=\u00223\u0022 \u002f\u003e';
+var currentEntityEditorContextId='FormControl_FormControl__customcontrol1';
+EnsureScriptParams('entityeditor.js', 'EntityEditorCallback', currentEntityEditorXml, currentEntityEditorContextId, true);var currentEntityEditorXml='\u003cEntities Append=\u0022False\u0022 Error=\u0022\u0022 DoEncodeErrorMessage=\u0022True\u0022 Separator=\u0022;\u0022 MaxHeight=\u00223\u0022 \u002f\u003e';
+var currentEntityEditorContextId='FormControl_FormControl__customcontrol2';
+EnsureScriptParams('entityeditor.js', 'EntityEditorCallback', currentEntityEditorXml, currentEntityEditorContextId, true);PickerAdjustHeight('FormControl_FormControl__customcontrol2', 3);var currentEntityEditorXml='\u003cEntities Append=\u0022False\u0022 Error=\u0022\u0022 DoEncodeErrorMessage=\u0022True\u0022 Separator=\u0022;\u0022 MaxHeight=\u00223\u0022 \u002f\u003e';
+var currentEntityEditorContextId='FormControl_FormControl__customcontrol2';
+EnsureScriptParams('entityeditor.js', 'EntityEditorCallback', currentEntityEditorXml, currentEntityEditorContextId, true);var currentEntityEditorXml='\u003cEntities Append=\u0022False\u0022 Error=\u0022\u0022 DoEncodeErrorMessage=\u0022True\u0022 Separator=\u0022;\u0022 MaxHeight=\u00223\u0022 \u002f\u003e';
+var currentEntityEditorContextId='FormControl_FormControl__customcontrol3';
+EnsureScriptParams('entityeditor.js', 'EntityEditorCallback', currentEntityEditorXml, currentEntityEditorContextId, true);PickerAdjustHeight('FormControl_FormControl__customcontrol3', 3);var currentEntityEditorXml='\u003cEntities Append=\u0022False\u0022 Error=\u0022\u0022 DoEncodeErrorMessage=\u0022True\u0022 Separator=\u0022;\u0022 MaxHeight=\u00223\u0022 \u002f\u003e';
+var currentEntityEditorContextId='FormControl_FormControl__customcontrol3';
+EnsureScriptParams('entityeditor.js', 'EntityEditorCallback', currentEntityEditorXml, currentEntityEditorContextId, true);//]]>
+</script>
+<script type="text/javascript">
+// <![CDATA[
+document.write('<script type="text/javascript" src="/_layouts/1033/ie55up.js?rev=UgTcwUTI6YcRzTMBxD93Xg%3D%3D"></' + 'script>');
+// ]]>
+</script>
+<script type="text/javascript">RegisterSod("sp.core.js", "\u002f_layouts\u002fsp.core.js?rev=7ByNlH\u00252BvcgRJg\u00252BRCctdC0w\u00253D\u00253D");</script>
+<script type="text/javascript">RegisterSod("sp.res.resx", "\u002f_layouts\u002fScriptResx.ashx?culture=en\u00252Dus\u0026name=SP\u00252ERes\u0026rev=b6\u00252FcRx1a6orhAQ\u00252FcF\u00252B0ytQ\u00253D\u00253D");</script>
+<script type="text/javascript">RegisterSod("sp.ui.dialog.js", "\u002f_layouts\u002fsp.ui.dialog.js?rev=Tpcmo1\u00252FSu6R0yewHowDl5g\u00253D\u00253D");RegisterSodDep("sp.ui.dialog.js", "sp.core.js");RegisterSodDep("sp.ui.dialog.js", "sp.res.resx");</script>
+<script type="text/javascript">RegisterSod("core.js", "\u002f_layouts\u002f1033\u002fcore.js?rev=Emb5hNX1RZMNXk9oS82yvA\u00253D\u00253D");</script>
+
+<script type="text/javascript"><!--
+
+function _InfoPath() {}
+_InfoPath.functionOldOnLoad = window.onload;
+_InfoPath.iCurrentFormIndex = 0;
+_InfoPath.arrForms = new Array();
+var g_objSnippetTree = new Array();
+var g_arrStructuralEditingContextMenu = new Array();
+CurrentFormData.g_objCurrentFormData = new Array();
+
+_InfoPath.GetFirstControl = function()
+{
+	return _InfoPath.arrForms[0];
+}
+
+_InfoPath.OnClick = function()
+{
+	if (_InfoPath.functionOldOnClick != null)
+	{
+		_InfoPath.functionOldOnClick();
+	}
+	Body.OnClick();
+}
+
+_InfoPath.OnUnLoad = function()
+{
+	var intLength = _InfoPath.arrForms.length;
+	for(var i = 0; i < intLength; i++)
+	{
+		var objForm = _InfoPath.arrForms[i];
+		if (objForm != null)
+		{
+			objForm.OnUnLoad(objForm.strFormId);
+		}
+	}
+	if (_InfoPath.functionOldOnUnLoad != null)
+	{
+		_InfoPath.functionOldOnUnLoad();
+	}
+}
+
+_InfoPath.OnLoad = function() 
+{
+	if (_InfoPath.functionOldOnLoad != null)
+	{
+		_InfoPath.functionOldOnLoad();
+	}
+
+	_InfoPath.functionOldOnClick = document.body.onclick;
+	document.body.onclick = _InfoPath.OnClick;
+
+	_InfoPath.functionOldOnUnLoad = window.onunload;
+	window.onunload = _InfoPath.OnUnLoad;
+
+	var intLength = _InfoPath.arrForms.length;
+
+	for (var i = 0; i < intLength; i++)
+	{
+		var objForm = _InfoPath.arrForms[i];
+		if (objForm != null)
+		{
+			GlobalFormData.Get(objForm.strFormId).intFormId = i;
+			objForm.InitializeData();
+		}
+	}
+	for (var i = 0; i < intLength; i++)
+	{
+		var objForm = _InfoPath.arrForms[i];
+		if (objForm != null)
+		{
+			if (!objForm.OnLoad())
+			{
+				// We are navigating to a URL because we cannot detect the cookies in PostbackBody_VerifyCookiesEnabled.
+				return;
+			}
+		}
+	}
+
+	if (LoadedScriptFiles.DetectAllScriptsLoaded != null && LoadedScriptFiles.DetectAllScriptsLoaded(true, _InfoPath.GetFirstControl().strFormId))
+	{
+		PostbackBody_RemoveUnusedIpfsCookies();
+
+		View_PostbackComplete2();
+		Canary_Initialize();
+	}
+}
+window.onload = _InfoPath.OnLoad;
+//--></script>
+<script type="text/javascript"><!--
+function FormControl() {}
+FormControl.strFormId = "FormControl";
+FormControl.strPostbackCall = "__doPostBack\u0028\u0027FormControl\u0027,\u0027\u0027\u0029";
+FormControl.strRibbonId = "FormControl"
+FormControl.strClientId = "FormControl"
+FormControl.InitializeData = function()
+{
+	if (typeof(g_objCurrentFormData_FormControl) != "undefined")
+	{
+		CurrentFormData.g_objCurrentFormData["FormControl"] = g_objCurrentFormData_FormControl;
+	}
+	else
+	{
+		CurrentFormData.g_objCurrentFormData["FormControl"] = g_objCurrentFormData_Error;
+	}
+	if (typeof(g_objSnippetTree_0_ER1bvCiLVoMQ8WIv) != "undefined" && typeof(g_arrStructuralEditingContextMenu_0_ER1bvCiLVoMQ8WIv) != "undefined")
+	{
+		g_objSnippetTree["FormControl"] = g_objSnippetTree_0_ER1bvCiLVoMQ8WIv;
+		g_arrStructuralEditingContextMenu["FormControl"] = g_arrStructuralEditingContextMenu_0_ER1bvCiLVoMQ8WIv;
+	}
+};
+FormControl.OnLoad = function() 
+{
+	if (LoadedScriptFiles.boolCoreLoaded)
+	{
+		if (!PostbackBody_VerifyCookiesEnabled(FormControl.strFormId))
+		{
+			return false;
+		}
+	}
+	if (LoadedScriptFiles.DetectAllScriptsLoaded != null && LoadedScriptFiles.DetectAllScriptsLoaded(true, FormControl.strFormId))
+	{
+		FormControl.OnUnLoad = PostbackBody.OnUnload;
+		PostbackBody.OnLoad(FormControl.strFormId);
+	}
+	else
+	{
+		document.getElementById('FormControl__ViewContainer').innerHTML = "<span class='ErrorLargeText'>There has been an error while loading the form. A required resource could not be downloaded. To try to resume the download, refresh the page.</span>";
+		try
+		{
+			if (PostbackBody_HideWaitUI != null)
+			{
+				PostbackBody_HideWaitUI();
+			}
+		}
+		catch (e)
+		{}
+	}
+
+	return true;
+};
+FormControl.OnUnLoad = function(){}
+_InfoPath.arrForms[_InfoPath.iCurrentFormIndex] = FormControl;
+_InfoPath.iCurrentFormIndex++;
+//--></script></form>
+		<script type="text/javascript">
+			function enableSelect() {
+				setTimeout(function() {
+					$("SELECT").attr("disabled", false);
+					$("DIV").attr("disabled", false);
+					$("SPAN").attr("disabled", false);
+					$("TABLE").attr("disabled", false);
+					$("TBODY").attr("disabled", false);
+					$("TR").attr("disabled", false);
+					$("TD").attr("disabled", false);
+					
+					if (window.location.href.indexOf("/Expense%20Claims/") > -1 ||
+						window.location.href.indexOf("/ExpenseClaims") > -1){
+						var obj = {};
+						$("TBODY#FormControl_V1_I1_R16 TR[id^=FormControl_V1_I1_R16_]").each(function() {
+							var code = $(this).find("TD:nth-child(2) SELECT").val();
+							var total = $(this).find("TD:nth-child(9) SPAN INPUT").prop("value");
+							if (code != null && total != null) {
+								if (obj[code] == null) obj[code] = parseFloat(total);
+								else obj[code] += parseFloat(total);
+							}
+						});
+
+						var html = "<div style='font-size: 14px; margin:10px; 0 50px 0;'><table width='400'><tr style='background-color:#f2f2f2;'><th style='padding:10px;'>GL Codes</th><th style='padding:10px;'>GL Code Total</th></tr>";
+						for (var idStr in obj)
+							html += "<tr><td align='center' style='padding:10px 0;'>"+idStr+"</td><td align='center' style='padding:10px;'>$"+obj[idStr].toFixed(2)+"</td></tr>";
+						html += "</table></div>";
+						$(html).insertBefore("DIV TABLE SPAN INPUT[value='Exit']");
+					}
+				}, 1000);
+			}
+			
+			enableSelect();
+		</script>
+	</body>
+</html>

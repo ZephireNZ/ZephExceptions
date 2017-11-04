@@ -1,0 +1,100 @@
+IMPACT:
+
+	<form action="myschedule" id="oFormMain" method="post" name="oFormMain">
+		<div accesskey="w" id="workPaneWrapper">
+			<div id="workContentWrapper" style="width: 100%; background-color: #e6edf6; border: #7386ad 1px solid;">
+				<div id="workAreaWrapper" style="overflow: auto; height: 737px; width: 100%; border-bottom: white 1px solid;">
+					<table border="0" cellpadding="0" cellspacing="0" id="workpaneListWrapper" width="100%">
+						<tbody>
+							<tr class="tblRow" id="workpaneListr1" valign="top">
+								<td class="tblItem" id="workpaneListr1c2" style="padding-right: 0px;"><span class="w100bbot1"><span class="w150px">&nbsp;TM Coaching</span>14:30 - 14:45</span><br>
+								<span class="w100bbot1"><span class="w150px"><img align="absmiddle" alt="" class="legendImg" id="0000FF_img_id" src="wfo/s.gif">&nbsp;Inbound</span><span style="left-padding: 3px;">14:45 - 15:30</span></span><br>
+								<span class="w100bbot1"><span class="w150px"><img align="absmiddle" alt="" class="legendImg" id="C5B2EA_img_id" src="wfo/s.gif" style="width: 16px; background-color: #c5b2ea;">&nbsp;Break</span>15:30 - 15:45</span><br>
+								<span class="w100bbot1"><span class="w150px"><img align="absmiddle" alt="" class="legendImg" id="0000FF_img_id" src="wfo/s.gif">&nbsp;Inbound</span><span style="left-padding: 3px;">15:45 - 17:04</span></span><br>
+								<span class="w100bbot1"><span class="w150px"><img align="absmiddle" alt="" class="legendImg" id="00756A_img_id" src="wfo/s.gif" style="width: 16px; background-color: #00756a;">&nbsp;Outbound Callback</span>17:04 - 17:06</span><br>
+								<span class="w100bbot1"><span class="w150px"><img align="absmiddle" alt="" class="legendImg" id="0000FF_img_id" src="wfo/s.gif">&nbsp;Inbound</span><span style="left-padding: 3px;">17:06 - 17:15</span></span><br>
+								<span class="w100bbot1"><span class="w150px"><img align="absmiddle" alt="" class="legendImg" id="FF9933_img_id" src="wfo/s.gif" style="width: 16px; background-color: #ff9933;">&nbsp;Training - Online</span>17:15 - 18:15<img alt="Improving efficiency and note taking / ACW " border="0" src="wfo/fs/images/icons/note_icon.gif?v=11.1.1.5846"></span><br>
+								<span class="w100bbot1"><span class="w150px"><img align="absmiddle" alt="" class="legendImg" id="8980C4_img_id" src="wfo/s.gif" style="width: 16px; background-color: #8980c4;">&nbsp;Lunch</span>18:15 - 18:45</span><br>
+								<span class="w100bbot1"><span class="w150px"><img align="absmiddle" alt="" class="legendImg" id="0000FF_img_id" src="wfo/s.gif">&nbsp;Inbound</span><span style="left-padding: 3px;">18:45 - 19:51</span></span><br>
+								<span class="w100bbot1"><span class="w150px"><img align="absmiddle" alt="" class="legendImg" id="663399_img_id" src="wfo/s.gif" style="width: 16px; background-color: #663399;">&nbsp;Email</span>19:51 - 19:58</span><br>
+								<span class="w100bbot1"><span class="w150px"><img align="absmiddle" alt="" class="legendImg" id="0000FF_img_id" src="wfo/s.gif">&nbsp;Inbound</span><span style="left-padding: 3px;">19:58 - 20:40</span></span><br>
+								<span class="w100bbot1"><span class="w150px"><img align="absmiddle" alt="" class="legendImg" id="C5B2EA_img_id" src="wfo/s.gif" style="width: 16px; background-color: #c5b2ea;">&nbsp;Break</span>20:40 - 20:55</span><br>
+								<span class="w100"><span class="w150px"><img align="absmiddle" alt="" class="legendImg" id="0000FF_img_id" src="wfo/s.gif">&nbsp;Inbound</span><span style="left-padding: 3px;">20:55 - 23:00</span></span></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</form>
+
+
+ZENOSS:
+
+<table aria-describedby="dt_7_1064_100_595cc0cd4da84_info" cellspacing="0" class="compact stripe cell-border order-column dataTable no-footer" id="dt_7_1064_100_595cc0cd4da84" role="grid">
+    <tbody>
+        <tr class="odd" role="row">
+            <td>AKCSBRYMCD01</td>
+            <td>LOGON</td>
+            <td>05-07-2017 14:30:05</td>
+            <td>05-07-2017 17:24:32</td>
+            <td>02:54:27</td>
+            <td>Technical issues</td>
+            <td>AKCSBRYMCD01</td>
+        </tr>
+        <tr class="even" role="row">
+            <td>AKCSBRYMCD01</td>
+            <td>BREAK</td>
+            <td>05-07-2017 15:40:41</td>
+            <td>05-07-2017 15:42:51</td>
+            <td>00:02:10</td>
+            <td>Off Queue</td>
+            <td>AKCSBRYMCD01</td>
+        </tr>
+        <tr class="odd" role="row">
+            <td>AKCSBRYMCD01</td>
+            <td>BREAK</td>
+            <td>05-07-2017 16:13:01</td>
+            <td>05-07-2017 16:32:18</td>
+            <td>00:19:17</td>
+            <td>Tea Break</td>
+            <td>AKCSBRYMCD01</td>
+        </tr>
+        <tr class="even" role="row">
+            <td>AKCSBRYMCD01</td>
+            <td>BREAK</td>
+            <td>05-07-2017 17:01:21</td>
+            <td>05-07-2017 17:04:23</td>
+            <td>00:03:02</td>
+            <td>Off Queue</td>
+            <td>AKCSBRYMCD01</td>
+        </tr>
+        <tr class="odd" role="row">
+            <td>AKCSBRYMCD01</td>
+            <td>LOGON</td>
+            <td>05-07-2017 17:30:10</td>
+            <td>05-07-2017 18:32:53</td>
+            <td>01:02:43</td>
+            <td>Technical issues</td>
+            <td>AKCSBRYMCD01</td>
+        </tr>
+        <tr class="even" role="row">
+            <td>AKCSBRYMCD01</td>
+            <td>LOGON</td>
+            <td>05-07-2017 19:02:03</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr class="odd" role="row">
+            <td>AKCSBRYMCD01</td>
+            <td>BREAK</td>
+            <td>05-07-2017 21:36:41</td>
+            <td>05-07-2017 21:51:32</td>
+            <td>00:14:51</td>
+            <td>Tea Break</td>
+            <td>AKCSBRYMCD01</td>
+        </tr>
+    </tbody>
+</table>

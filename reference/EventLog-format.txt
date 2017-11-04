@@ -1,0 +1,57 @@
+Postback is sent for  username
+
+23;V1_I1_X1;
+brynley.mcdonald;
+
+23;V1_I1_X2;
+brynley.mcdonald;
+
+FORMAT:
+
+NOTE: before each new field is a space, denoted here as blankline
+
+---------
+
+1
+
+8;
+0; # Changes to 1 when submitted for added, changed to 2 when submitted by added
+bdbaf792c2d74b1d9c441d43db4a4645_52420a10a9a44f3fa6c91dd174417e97; #Unique ID for this submission, found in var g_objCurrentFormData_FormControl
+AFUNAIHEPRJJIRM342GUZE4BMGYC2L2UJ5HUYUZPKJCVCVKFKNKFGL2FLBBUKUCUJFHU4UZPIZHVETKTF5KEKTKQJRAVIRJOLBJU4KTZMIZWKZ2GORYGKZTTIVHUQT3FJZITC53EINFW4RBUG5UXKMKJJNUG4VTSKFLVKS3HIE; # Form ID
+0;; # ??
+http%3A%2F%2F2dintranet.2degreesmobile.co.nz%2Ftools%2Frequests%2FExceptions%2FForms%2Ftemplate.xsn; # Template for the form
+http%3A%2F%2F2dintranet.2degreesmobile.co.nz%2Ftools%2Frequests%2FExceptions%2FForms%2Ftemplate.xsn; # Template for the form
+http%3A%2F%2F2dintranet.2degreesmobile.co.nz%2Ftools%2Frequests%2FExceptions%2F; # Location to submit to
+http%3A%2F%2F2dintranet.2degreesmobile.co.nz%2Ftools%2Frequests; # ??
+http%3A%2F%2F2dintranet.2degreesmobile.co.nz%2Ftools%2Frequests%2FExceptions%2FForms%2FMyExceptions.aspx%3FFilterField1%3DID%26FilterValue1%3D93263%26FilterOp1%3DGeq%26OverrideScope%3DRecursiveAll%26FallbackLimit%3D93263%26ProcessQStringToCAML%3D1; # Referrer/Redirect link
+1;1;0;1;0;0; # ??
+636349282014412000;; # Seems to be linked to the cookie, unsure how though, can only be found in the EventLog input value
+FormControl;2;5129;1033;0;17; # No clue what any of this is
+nYkUn+NcMHbARrUL1zO3ihknMSFF+XwjQdf9QaQXa3m9zsZPJuqnok/u2d9z/HSUijGJsukWziJL8q6wlwhZ3A==|636349282014412255 # Token for current session, given as a
+cookie on open or postback
+
+0;V1_I1_D3;;
+Reina%20Sancho # Name, URL encoded, full list is found in var g_objCurrentFormData_FormControl
+
+0;V1_I1_T4;1;
+2017-07-07 # Date, in YYYY-MM-DD format
+
+0;V1_I1_D6;;
+Stuck%20on%20call%2FCustomer%20Escalation # URL encoded reason list, full list is found via seperate GET request
+
+12;V1_I1_RTC7_RTI1_RT1;;
+%3Cdiv%3EABlahC%3C%2Fdiv%3E # Description as HTML, URL encoded
+
+0;V1_I1_T8;1;
+13%3A00%3A00 # Timestamp, URL Encoded, fomat HH:mm:ss
+
+0;V1_I1_T9;1;
+13%3A30%3A00 # Timestamp, URL Encoded, fomat HH:mm:ss
+
+0;V1_I1_T10;1;
+14%3A00%3A00 # Timestamp, URL Encoded, fomat HH:mm:ss
+
+0;V1_I1_T11;1;
+14%3A30%3A00 # Timestamp, URL Encoded, fomat HH:mm:ss
+
+1;CTRL15_5;V1_I1; # Button submit
