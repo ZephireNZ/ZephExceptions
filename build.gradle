@@ -1,24 +1,20 @@
-group 'nz.zephire'
-version '1.0-SNAPSHOT'
-
-buildscript {
-    repositories {
-        jcenter()
-    }
-
-    dependencies {
-        classpath 'com.github.jengelman.gradle.plugins:shadow:2.0.1'
-    }
+plugins {
+    id 'java'
+    id 'idea'
+    id 'de.fuerstenau.buildconfig' version '1.1.8'
+    id 'com.github.johnrengelman.shadow' version '2.0.1'
 }
 
-apply plugin: 'java'
-apply plugin: 'com.github.johnrengelman.shadow'
+group 'nz.zephire'
+name
+version '1.0-SNAPSHOT'
 
 sourceCompatibility = 1.7
 
 repositories {
     mavenCentral()
     flatDir dirs: "${rootDir}/lib"
+    jcenter()
 
 }
 
@@ -28,6 +24,10 @@ dependencies {
     compile 'com.google.guava:guava:23.3-jre'
     compile name: "forms_rt", version: "2017.2.1"
     testCompile "junit:junit:4.12"
+}
+
+buildConfig {
+    packageName = "nz.zephire.exceptions"
 }
 
 jar {
