@@ -1,0 +1,37 @@
+group 'nz.zephire'
+version '1.0-SNAPSHOT'
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'com.github.jengelman.gradle.plugins:shadow:2.0.1'
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'com.github.johnrengelman.shadow'
+
+sourceCompatibility = 1.7
+
+repositories {
+    mavenCentral()
+    flatDir dirs: "${rootDir}/lib"
+
+}
+
+dependencies {
+    compile "joda-time:joda-time:2.9.9"
+    compile "org.json:json:20171018"
+    compile 'com.google.guava:guava:23.3-jre'
+    compile name: "forms_rt", version: "2017.2.1"
+    testCompile "junit:junit:4.12"
+}
+
+jar {
+    manifest {
+        attributes "Main-Class": "nz.zephire.exceptions.gui.WindowNewException"
+    }
+}
