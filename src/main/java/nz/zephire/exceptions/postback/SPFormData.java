@@ -1,7 +1,5 @@
 package nz.zephire.exceptions.postback;
 
-import org.json.JSONArray;
-
 import java.util.List;
 
 public class SPFormData {
@@ -10,9 +8,9 @@ public class SPFormData {
     private final String zeroedTimestamp;
     private final String canary;
     private final List<String> approvers;
-    private final JSONArray raw;
+    private final List<?> raw;
 
-    public SPFormData(String uuid, String zeroedTimestamp, String canary, List<String> approvers, JSONArray raw) {
+    public SPFormData(String uuid, String zeroedTimestamp, String canary, List<String> approvers, List<?> raw) {
 
         this.uuid = uuid;
         this.zeroedTimestamp = zeroedTimestamp;
@@ -21,7 +19,7 @@ public class SPFormData {
         this.raw = raw;
     }
 
-    public JSONArray getRaw() {
+    public List<?> getRaw() {
         return raw;
     }
 

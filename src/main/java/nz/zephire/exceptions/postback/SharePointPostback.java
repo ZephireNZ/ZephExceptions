@@ -1,17 +1,11 @@
 package nz.zephire.exceptions.postback;
 
 import com.google.common.base.Joiner;
-import com.google.common.io.CharStreams;
-import nz.zephire.exceptions.Utils;
+import com.google.gson.Gson;
 import nz.zephire.exceptions.postback.backend.KBBackend;
 import nz.zephire.exceptions.postback.backend.SPBackend;
-import org.json.JSONArray;
 
 import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.OutputStream;
-import java.net.HttpURLConnection;
-import java.net.URL;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
@@ -81,28 +75,28 @@ public class SharePointPostback implements SPPostbackObject {
 
         return readFormData(match.group(1));
     }
-    // Parses "JSON of var g_objCurrentFormData_FormControl"
 
+    // Parses "JSON of var g_objCurrentFormData_FormControl"
     private static SPFormData readFormData(String formData) {
-        JSONArray obj = new JSONArray(formData);
+        List<?> obj = new Gson().fromJson(formData, List.class);
 
         // Navigates the nested arrays using given sequence
-        JSONArray arr = obj;
+        List<?> curr = obj;
         for(int i : APPROVERS_UNWRAP_SEQUENCE) {
-            arr = arr.getJSONArray(i);
+            curr = (List<?>) curr.get(i);
         }
 
-        List<String> approvers = new ArrayList<>(arr.length());
-        for(Object approver : arr) {
+        List<String> approvers = new ArrayList<>(curr.size());
+        for(Object approver : curr) {
             if(!(approver instanceof String)) continue;
 
             approvers.add((String) approver);
         }
 
         return new SPFormData(
-                obj.getString(REQUEST_UUID),
-                obj.getString(TIMESTAMP_ZEROED),
-                obj.getString(CANARY),
+                (String) obj.get(REQUEST_UUID),
+                (String)obj.get(TIMESTAMP_ZEROED),
+                (String) obj.get(CANARY),
                 approvers,
                 obj
         );

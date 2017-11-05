@@ -3,9 +3,9 @@ package nz.zephire.exceptions.postback.backend;
 import com.google.common.collect.Lists;
 import nz.zephire.exceptions.Utils;
 import nz.zephire.exceptions.postback.SPFormData;
-import org.json.JSONArray;
 
 import java.io.IOException;
+import java.util.Collections;
 
 // Used for testing, just returns static data
 public class FakeBackend implements SPBackend {
@@ -17,7 +17,7 @@ public class FakeBackend implements SPBackend {
                 "636349282014412000",
                 "uG2TEcJ9jnR0s96EWLWW4yL+UHIICLVz/AZ28jQ6G2EOzmyGUtClh8r/yDKYtEAW5loNRpY4D0VEd1DTIGzfRQ==|636439601974863152",
                 Lists.newArrayList("Reina Sancho", "Deneshen Naidoo"),
-                new JSONArray()
+                Collections.emptyList()
         );
     }
 
