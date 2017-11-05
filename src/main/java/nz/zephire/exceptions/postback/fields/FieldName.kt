@@ -1,6 +1,6 @@
-package nz.zephire.exceptions.postback.fields;
+package nz.zephire.exceptions.postback.fields
 
-public enum FieldName {
+enum class FieldName private constructor(val id: String) {
 
     SUBMITTED_FOR("V1_I1_X1"),
     SUBMITTED_BY("V1_I1_X2"),
@@ -12,16 +12,5 @@ public enum FieldName {
     ORIG_END("V1_I1_T9"),
     NEW_START("V1_I1_T10"),
     NEW_END("V1_I1_T11"),
-    SUBMIT("CTRL15_5;V1_I1"),
-    ;
-
-    private final String id;
-
-    FieldName(String id) {
-        this.id = id;
-    }
-
-    public String getId() {
-        return id;
-    }
+    SUBMIT("CTRL15_5;V1_I1")
 }

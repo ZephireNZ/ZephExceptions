@@ -1,5 +1,7 @@
 package nz.zephire.exceptions.exceptions;
 
+import static nz.zephire.exceptions.StateConfigKt.loadConfig;
+
 import nz.zephire.exceptions.StateConfig;
 import org.joda.time.LocalDate;
 import org.joda.time.LocalTime;
@@ -17,7 +19,7 @@ public class ExceptionManager {
     private static ExceptionManager inst;
 
     public static ExceptionManager inst() {
-        if(inst == null) return new ExceptionManager(StateConfig.loadConfig());
+        if(inst == null) return new ExceptionManager(loadConfig());
 
         return inst;
     }
