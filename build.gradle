@@ -21,7 +21,7 @@ repositories {
 dependencies {
     compile "joda-time:joda-time:2.9.9"
     compile "org.json:json:20171018"
-    compile 'com.google.guava:guava:23.3-jre'
+    compile 'com.google.guava:guava:23.3-android'
     compile name: "forms_rt", version: "2017.2.1"
     testCompile "junit:junit:4.12"
 }
@@ -30,8 +30,11 @@ buildConfig {
     packageName = "nz.zephire.exceptions"
 }
 
+build.dependsOn shadowJar
+
 jar {
     manifest {
-        attributes "Main-Class": "nz.zephire.exceptions.gui.WindowNewException"
+        // attributes "Main-Class": "nz.zephire.exceptions.gui.WindowNewException"
+        attributes "Main-Class": "nz.zephire.exceptions.gui.SPTestMain"
     }
 }
