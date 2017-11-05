@@ -28,6 +28,10 @@ public class WindowMain {
         });
     }
 
+    public WindowMain() {
+        //TODO: State for size/location
+    }
+
     public void createAndShowGUI() {
         JFrame frame = new JFrame("WindowStart");
         frame.setContentPane(new WindowMain().root);

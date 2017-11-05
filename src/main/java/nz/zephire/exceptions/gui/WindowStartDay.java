@@ -3,8 +3,9 @@ package nz.zephire.exceptions.gui;
 import com.intellij.uiDesigner.core.GridConstraints;
 import com.intellij.uiDesigner.core.GridLayoutManager;
 import com.intellij.uiDesigner.core.Spacer;
+import nz.zephire.exceptions.StateConfig;
 import nz.zephire.exceptions.Utils;
-import org.joda.time.LocalTime;
+import nz.zephire.exceptions.exceptions.ExceptionManager;
 
 import java.awt.Dimension;
 import java.awt.Insets;
@@ -39,13 +40,22 @@ public class WindowStartDay {
     public WindowStartDay() {
         $$$setupUI$$$();
         startButton.addActionListener(getStartListener());
+
+        StateConfig conf = ExceptionManager.inst().getConfig();
+
+        String uname = conf.getUsername();
+        if(uname != null && !uname.isEmpty()) {
+            username.setText(uname);
+        }
     }
 
     private void createUIComponents() {
         //TODO: Load start/end state
         //TODO: Load username state
-        startTime = GUIUtils.createTimeSpinner(LocalTime.now());
-        endTime = GUIUtils.createTimeSpinner(LocalTime.now());
+        StateConfig conf = ExceptionManager.inst().getConfig();
+
+        startTime = GUIUtils.createTimeSpinner(conf.getStartTime());
+        endTime = GUIUtils.createTimeSpinner(conf.getEndTime());
     }
 
     public static void main(String[] args) {
@@ -58,7 +68,7 @@ public class WindowStartDay {
         });
     }
 
-    private void createAndShowGUI() {
+    public void createAndShowGUI() {
         frame = new JFrame("Day Start");
         frame.setContentPane(root);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -77,7 +87,7 @@ public class WindowStartDay {
                 // TODO: Confirm if this is necessary
                 String[] uSplit = username.getText().split("\\\\"); // fowardslash java and regex escaped...
                 String userWithRealm = username.getText();
-                if(uSplit.length == 1) {
+                if (uSplit.length == 1) {
                     userWithRealm = "NZC\\" + userWithRealm;
                 }
 

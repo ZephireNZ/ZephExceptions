@@ -1,10 +1,8 @@
 package nz.zephire.exceptions.exceptions;
 
+import nz.zephire.exceptions.StateConfig;
 import org.joda.time.LocalDate;
 import org.joda.time.LocalTime;
-
-import java.util.HashSet;
-import java.util.Set;
 
 public class ExceptionManager {
 
@@ -13,26 +11,28 @@ public class ExceptionManager {
 //    Period p = new Period(a, b);
 //    p.toStandardDuration().getStandardMinutes(); // TODO: length of exception/differences
 
-    private final Set<PreApprovedException> preApproved = new HashSet<>();
+    private final StateConfig config;
+    private final LocalDate date = LocalDate.now();
 
-    private final Set<Exception> exceptions = new HashSet<>();
+    private static ExceptionManager inst;
 
-    private final LocalDate date;
-    private final LocalTime startTime;
-    private final LocalTime endTime;
+    public static ExceptionManager inst() {
+        if(inst == null) return new ExceptionManager(StateConfig.loadConfig());
 
-    public ExceptionManager(LocalDate date, LocalTime startTime, LocalTime endTime) {
+        return inst;
+    }
 
-        this.date = date;
-        this.startTime = startTime;
-        this.endTime = endTime;
+    private ExceptionManager(StateConfig config) {
+        this.config = config;
+
+        inst = this;
     }
 
     public Exception getNextPreApproved() {
         LocalTime now = LocalTime.now();
 
         Exception next = null;
-        for(PreApprovedException e : preApproved) {
+        for(PreApprovedException e : config.getPreApproved()) {
             if(e.isComplete()) continue;
 
             if(next == null) {;
@@ -49,11 +49,11 @@ public class ExceptionManager {
 
     public void addException(Exception exception) {
         if(exception instanceof PreApprovedException) {
-            preApproved.add((PreApprovedException) exception);
+            config.addPreApproved((PreApprovedException) exception);
             return;
         }
 
-        exceptions.add(exception);
+        config.addException(exception);
     }
 
     // Simple Getters
@@ -62,11 +62,7 @@ public class ExceptionManager {
         return date;
     }
 
-    public LocalTime getStartTime() {
-        return startTime;
-    }
-
-    public LocalTime getEndTime() {
-        return endTime;
+    public StateConfig getConfig() {
+        return config;
     }
 }

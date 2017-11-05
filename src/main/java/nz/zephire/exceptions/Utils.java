@@ -1,5 +1,10 @@
 package nz.zephire.exceptions;
 
+import com.fatboyindustrial.gsonjodatime.Converters;
+import com.google.gson.FieldNamingPolicy;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.net.Authenticator;
@@ -39,6 +44,12 @@ public class Utils {
                 return new PasswordAuthentication(username, password);
             }
         });
+    }
+
+    public static Gson getGson() {
+        return Converters.registerAll(new GsonBuilder())
+                .setFieldNamingPolicy(FieldNamingPolicy.LOWER_CASE_WITH_UNDERSCORES)
+                .create();
     }
 
 }
