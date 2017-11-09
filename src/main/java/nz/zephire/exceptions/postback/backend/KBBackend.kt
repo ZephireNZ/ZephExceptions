@@ -19,11 +19,13 @@ class KBBackend : SPBackend {
             val con = URL(INIT_URL).openConnection() as HttpURLConnection
             con.requestMethod = "GET"
 
+            val reqProps = con.requestProperties // throws an exception if called prior to connecting
+
             val body = CharStreams.toString(InputStreamReader(con.inputStream))
 
             Utils.debugLog("GET REQ HEADERS:")
 
-            for ((key, value) in con.requestProperties) {
+            for ((key, value) in reqProps) {
                 Utils.debugLog(key + ": " + Joiner.on("; ").join(value))
             }
 
@@ -49,6 +51,8 @@ class KBBackend : SPBackend {
         con.setRequestProperty("Content-Type", "text/plain")
         con.setRequestProperty("Content-Length", Integer.toString(postBody.size))
 
+        val reqProps = con.requestProperties // throws an exception if called prior to connecting
+
         val output = con.outputStream
         output.write(postBody)
         output.flush()
@@ -58,7 +62,7 @@ class KBBackend : SPBackend {
 
         Utils.debugLog("POST REQ HEADERS:")
 
-        for ((key, value) in con.requestProperties) {
+        for ((key, value) in reqProps) {
             Utils.debugLog(key + ": " + Joiner.on("; ").join(value))
         }
 
