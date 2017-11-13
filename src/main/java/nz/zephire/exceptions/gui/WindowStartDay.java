@@ -90,7 +90,7 @@ public class WindowStartDay {
 
                 Utils.setAuth(userWithRealm, password.getPassword());
 
-                //TODO: Launch main
+                new WindowMain().createAndShowGUI();
 
                 WindowStartDay.this.frame.dispose();
             }
