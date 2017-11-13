@@ -2,7 +2,6 @@ package nz.zephire.exceptions.gui;
 
 import nz.zephire.exceptions.Utils;
 import nz.zephire.exceptions.postback.SharePointPostback;
-import nz.zephire.exceptions.postback.backend.FakeBackend;
 import nz.zephire.exceptions.postback.fields.FieldName;
 import nz.zephire.exceptions.postback.fields.SPField;
 import nz.zephire.exceptions.postback.fields.SPHeader;
@@ -12,11 +11,8 @@ import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.IOException;
-import java.net.Authenticator;
-import java.net.PasswordAuthentication;
 
 import javax.swing.JButton;
-import javax.swing.JDialog;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
@@ -80,44 +76,52 @@ public class SPTestMain {
         return new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                Utils.setAuth(username.getText(), password.getText().toCharArray());
-
-                Utils.debugLog("submit");
-//                SharePointPostback sp = new SharePointPostback(new FakeBackend());
-                SharePointPostback sp = new SharePointPostback();
-
                 try {
-                    Utils.debugLog("start init");
-                    sp.init();
-                    Utils.debugLog("init complete");
-                } catch (IOException except) {
-                    Utils.debugLog("init failed");
-                    Utils.debugLog(except);
 
-                    JOptionPane.showMessageDialog(testWindow, except.getMessage(), "Failure", JOptionPane.ERROR_MESSAGE);
-                }
+                    Utils.setAuth(username.getText(), password.getText().toCharArray());
 
-                sp.add(new SPHeader(sp.getFormData()));
+                    Utils.debugLog("submit");
+                    //                SharePointPostback sp = new SharePointPostback(new FakeBackend());
+                    SharePointPostback sp = new SharePointPostback();
 
-                // Add fields
-                sp.add(new SPField(FieldName.SUBMITTED_FOR, "brynley.mcdonald"));
-                sp.add(new SPField(FieldName.SUBMITTED_BY, "brynley.mcdonald"));
-                sp.add(new SPField(FieldName.APPROVER, "Deneshan%20Naidoo"));
-                sp.add(new SPField(FieldName.DATE, "2017-10-29"));
-                sp.add(new SPField(FieldName.REASON, "Other"));
-                sp.add(new SPField(FieldName.DESCRIPTION, "TestPlzIgnore"));
-                sp.add(new SPField(FieldName.NEW_START, "12%3A00%3A00"));
-                sp.add(new SPField(FieldName.NEW_END, "12%3A30%3A00"));
-                sp.add(new SPField(FieldName.SUBMIT, null));
+                    try {
+                        Utils.debugLog("start init");
+                        sp.init();
+                        Utils.debugLog("init complete");
+                    } catch (IOException except) {
+                        Utils.debugLog("init failed");
+                        Utils.debugLog(except);
 
-                try {
-                    Utils.debugLog("start post");
-                    sp.post();
-                    Utils.debugLog("post complete");
+                        JOptionPane.showMessageDialog(testWindow, except.getMessage(), "Failure", JOptionPane.ERROR_MESSAGE);
+                    }
 
-                    JOptionPane.showMessageDialog(testWindow, "Success!");
-                } catch (IOException except) {
-                    Utils.debugLog("post failed");
+                    sp.add(new SPHeader(sp.getFormData()));
+
+                    // Add fields
+                    sp.add(new SPField(FieldName.SUBMITTED_FOR, "brynley.mcdonald"));
+                    sp.add(new SPField(FieldName.SUBMITTED_BY, "brynley.mcdonald"));
+                    sp.add(new SPField(FieldName.APPROVER, "Deneshan%20Naidoo"));
+                    sp.add(new SPField(FieldName.DATE, "2017-10-29"));
+                    sp.add(new SPField(FieldName.REASON, "Other"));
+                    sp.add(new SPField(FieldName.DESCRIPTION, "TestPlzIgnore"));
+                    sp.add(new SPField(FieldName.NEW_START, "12%3A00%3A00"));
+                    sp.add(new SPField(FieldName.NEW_END, "12%3A30%3A00"));
+                    sp.add(new SPField(FieldName.SUBMIT, null));
+
+                    try {
+                        Utils.debugLog("start post");
+                        sp.post();
+                        Utils.debugLog("post complete");
+
+                        JOptionPane.showMessageDialog(testWindow, "Success!");
+                    } catch (IOException except) {
+                        Utils.debugLog("post failed");
+                        Utils.debugLog(except);
+                        JOptionPane.showMessageDialog(testWindow, except.getMessage(), "Failure", JOptionPane.ERROR_MESSAGE);
+                    }
+
+                } catch (Exception except) {
+                    Utils.debugLog("Unexpected error");
                     Utils.debugLog(except);
                     JOptionPane.showMessageDialog(testWindow, except.getMessage(), "Failure", JOptionPane.ERROR_MESSAGE);
                 }
