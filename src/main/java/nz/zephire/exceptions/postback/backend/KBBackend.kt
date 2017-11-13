@@ -35,6 +35,7 @@ val APPROVERS_UNWRAP_SEQUENCE = intArrayOf(1, 1, 0, 0, 1, 2, 2, 1, 2)
 fun parseFormData(html: String): SPFormData {
     val regex = Pattern.compile("var g_objCurrentFormData_FormControl = (.*);")
     val match = regex.matcher(html)
+    match.find()
 
     return readFormData(match.group(1))
 }
