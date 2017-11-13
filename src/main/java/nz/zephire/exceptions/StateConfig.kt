@@ -1,25 +1,29 @@
 package nz.zephire.exceptions
 
-import com.google.common.base.Charsets
 import com.google.common.collect.Sets
 import com.google.gson.annotations.SerializedName
 import nz.zephire.exceptions.exceptions.Exception
 import nz.zephire.exceptions.exceptions.PreApprovedException
+import org.joda.time.LocalDate
 import org.joda.time.LocalTime
+import java.io.File
 import java.io.IOException
-import java.nio.file.Files
-import java.nio.file.Path
 import java.nio.file.Paths
-import java.nio.file.StandardOpenOption
 import java.util.*
 
-val SAVE_LOCATION: Path = Paths.get(System.getProperty("user.home"), ".config", "exceptions.conf")
+val SAVE_LOCATION: File = Paths.get(System.getProperty("user.home"), ".config", "exceptions.conf").toFile()
 
 private val GSON = Utils.getGson()
 
 fun loadConfig(): StateConfig {
     try {
-        return GSON.fromJson(Files.newBufferedReader(SAVE_LOCATION, Charsets.UTF_8), StateConfig::class.java)
+        if(!SAVE_LOCATION.exists()) {
+            val conf = StateConfig()
+            conf.saveConfig()
+            return conf
+        }
+
+        return GSON.fromJson(SAVE_LOCATION.bufferedReader(), StateConfig::class.java)
     } catch (e: IOException) {
         Utils.debugLog("Unable to load config!")
         Utils.debugLog(e)
@@ -38,21 +42,27 @@ class StateConfig {
             saveConfig()
         }
 
-    var startTime: LocalTime? = null
-        set(startTime) {
-            field = startTime
+    var previousStartTime: LocalTime = LocalTime.MIDNIGHT
+        set(value) {
+            field = value
             saveConfig()
         }
 
-    var endTime: LocalTime? = null
-        set(endTime) {
-            field = endTime
+    var previousEndTime: LocalTime = LocalTime.MIDNIGHT
+        set(value) {
+            field = value
+            saveConfig()
+        }
+
+    var previousDay: LocalDate = LocalDate.now()
+        set(value) {
+            field = value
             saveConfig()
         }
 
     var isFinished = true
-        set(finished) {
-            field = finished
+        set(value) {
+            field = value
             saveConfig()
         }
 
@@ -79,9 +89,11 @@ class StateConfig {
         saveConfig()
     }
 
-    private fun saveConfig() {
+    fun saveConfig() {
+        val out = SAVE_LOCATION.bufferedWriter()
+
         try {
-            GSON.toJson(this, Files.newBufferedWriter(SAVE_LOCATION, Charsets.UTF_8, StandardOpenOption.CREATE, StandardOpenOption.TRUNCATE_EXISTING))
+            GSON.toJson(this, out)
         } catch (e: IOException) {
             Utils.debugLog("Unable to save config!")
             Utils.debugLog(e)
@@ -89,15 +101,21 @@ class StateConfig {
             Utils.debugLog("State at save:")
             Utils.debugLog(this.toString())
             throw RuntimeException(e)
+        } finally {
+            out.close()
         }
 
     }
 
     override fun toString(): String {
-        return "StateConfig{" +
-                "username='" + this.username + '\'' +
-                ", startTime=" + this.startTime +
-                ", endTime=" + this.endTime +
-                '}'
+        return "StateConfig(" +
+                "username='$username', " +
+                "previousStartTime=$previousStartTime, " +
+                "previousEndTime=$previousEndTime, " +
+                "previousDay=$previousDay, " +
+                "isFinished=$isFinished, " +
+                "preApproved=$preApproved, " +
+                "exceptions=$exceptions" +
+                ")"
     }
 }

@@ -39,23 +39,20 @@ public class WindowStartDay {
 
     public WindowStartDay() {
         $$$setupUI$$$();
+
+        // Post-Creation setup
         startButton.addActionListener(getStartListener());
 
         StateConfig conf = ExceptionManager.inst().getConfig();
 
-        String uname = conf.getUsername();
-        if(uname != null && !uname.isEmpty()) {
-            username.setText(uname);
-        }
+        username.setText(conf.getUsername());
     }
 
     private void createUIComponents() {
-        //TODO: Load start/end state
-        //TODO: Load username state
         StateConfig conf = ExceptionManager.inst().getConfig();
 
-        startTime = GUIUtils.createTimeSpinner(conf.getStartTime());
-        endTime = GUIUtils.createTimeSpinner(conf.getEndTime());
+        startTime = GUIUtils.createTimeSpinner(conf.getPreviousStartTime());
+        endTime = GUIUtils.createTimeSpinner(conf.getPreviousEndTime());
     }
 
     public static void main(String[] args) {
