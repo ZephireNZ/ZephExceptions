@@ -1,9 +1,9 @@
 package nz.zephire.exceptions
 
-import com.google.common.collect.Sets
+import com.google.common.collect.Lists
 import com.google.gson.annotations.SerializedName
 import nz.zephire.exceptions.exceptions.Exception
-import nz.zephire.exceptions.exceptions.PreApprovedException
+import nz.zephire.exceptions.exceptions.RosteredException
 import org.joda.time.LocalDate
 import org.joda.time.LocalTime
 import java.io.File
@@ -42,13 +42,13 @@ class StateConfig {
             saveConfig()
         }
 
-    var previousStartTime: LocalTime = LocalTime.MIDNIGHT
+    var startTime: LocalTime = LocalTime.MIDNIGHT
         set(value) {
             field = value
             saveConfig()
         }
 
-    var previousEndTime: LocalTime = LocalTime.MIDNIGHT
+    var endTime: LocalTime = LocalTime.MIDNIGHT
         set(value) {
             field = value
             saveConfig()
@@ -66,21 +66,36 @@ class StateConfig {
             saveConfig()
         }
 
+    var currentExceptionStartTime: LocalTime? = null
+        set(value) {
+            field = value
+            saveConfig()
+        }
 
     @SerializedName("pre_approved")
-    private var _preApproved: MutableSet<PreApprovedException> = Sets.newHashSet()
+    private var _rostered: MutableList<RosteredException> = Lists.newArrayList()
 
     @Transient
-    val preApproved: Set<PreApprovedException> = Collections.unmodifiableSet(_preApproved)
+    val rostered: List<RosteredException> = Collections.unmodifiableList(_rostered)
 
     @SerializedName("exceptions")
-    private var _exceptions: MutableSet<Exception> = Sets.newHashSet()
+    private var _exceptions: MutableList<Exception> = Lists.newArrayList()
 
     @Transient
-    val exceptions: Set<Exception> = Collections.unmodifiableSet(_exceptions)
+    val exceptions: List<Exception> = Collections.unmodifiableList(_exceptions)
 
-    fun addPreApproved(preApproved: PreApprovedException) {
-        this._preApproved.add(preApproved)
+    @SerializedName("current_rostered")
+    private var _currentRostered: Int = -1 // Reference to list of Pre-Approved, or -1 for none
+        set(value) {
+            field = value
+            saveConfig()
+        }
+
+    @Transient
+    var currentRostered: RosteredException? = rostered.getOrNull(_currentRostered)
+
+    fun addRosteredException(rostered: RosteredException) {
+        this._rostered.add(rostered)
         saveConfig()
     }
 
@@ -110,11 +125,12 @@ class StateConfig {
     override fun toString(): String {
         return "StateConfig(" +
                 "username='$username', " +
-                "previousStartTime=$previousStartTime, " +
-                "previousEndTime=$previousEndTime, " +
+                "startTime=$startTime, " +
+                "endTime=$endTime, " +
                 "previousDay=$previousDay, " +
                 "isFinished=$isFinished, " +
-                "preApproved=$preApproved, " +
+                "currentExceptionStartTime=$currentExceptionStartTime, " +
+                "rostered=$rostered, " +
                 "exceptions=$exceptions" +
                 ")"
     }

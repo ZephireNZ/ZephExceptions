@@ -137,7 +137,7 @@
         <properties/>
         <border type="none"/>
         <children>
-          <component id="847c6" class="javax.swing.JTextArea" binding="preApproved" default-binding="true">
+          <component id="847c6" class="javax.swing.JTextArea" binding="rostered" default-binding="true">
             <constraints/>
             <properties>
               <rows value="5"/>

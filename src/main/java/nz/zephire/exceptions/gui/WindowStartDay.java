@@ -5,7 +5,7 @@ import com.intellij.uiDesigner.core.GridLayoutManager;
 import com.intellij.uiDesigner.core.Spacer;
 import nz.zephire.exceptions.StateConfig;
 import nz.zephire.exceptions.Utils;
-import nz.zephire.exceptions.exceptions.ExceptionManager;
+import nz.zephire.exceptions.exceptions.ExceptionManagerKt;
 
 import java.awt.Dimension;
 import java.awt.Insets;
@@ -32,7 +32,7 @@ public class WindowStartDay {
     private JTextField username;
     private JSpinner startTime;
     private JSpinner endTime;
-    private JTextArea preApproved; // TODO: Replace with scrape from Impact360
+    private JTextArea rostered; // TODO: Replace with scrape from Impact360
     private JButton startButton;
 
     private JFrame frame;
@@ -43,16 +43,16 @@ public class WindowStartDay {
         // Post-Creation setup
         startButton.addActionListener(getStartListener());
 
-        StateConfig conf = ExceptionManager.inst().getConfig();
+        StateConfig conf = ExceptionManagerKt.inst().getConfig();
 
         username.setText(conf.getUsername());
     }
 
     private void createUIComponents() {
-        StateConfig conf = ExceptionManager.inst().getConfig();
+        StateConfig conf = ExceptionManagerKt.inst().getConfig();
 
-        startTime = GUIUtils.createTimeSpinner(conf.getPreviousStartTime());
-        endTime = GUIUtils.createTimeSpinner(conf.getPreviousEndTime());
+        startTime = GUIUtils.createTimeSpinner(conf.getStartTime());
+        endTime = GUIUtils.createTimeSpinner(conf.getEndTime());
     }
 
     public static void main(String[] args) {
@@ -177,9 +177,9 @@ public class WindowStartDay {
         root.add(scrollPane1, new GridConstraints(6, 0, 1, 2, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_BOTH,
                 GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_WANT_GROW,
                 GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_WANT_GROW, null, null, null, 0, false));
-        preApproved = new JTextArea();
-        preApproved.setRows(5);
-        scrollPane1.setViewportView(preApproved);
+        rostered = new JTextArea();
+        rostered.setRows(5);
+        scrollPane1.setViewportView(rostered);
     }
 
     /** @noinspection ALL */
