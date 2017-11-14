@@ -15,7 +15,7 @@
         <properties/>
         <border type="none"/>
         <children>
-          <component id="33954" class="javax.swing.JButton" binding="button1" default-binding="true">
+          <component id="33954" class="javax.swing.JButton" binding="exceptionButton" default-binding="true">
             <constraints border-constraint="Center"/>
             <properties>
               <text value="Button"/>
@@ -23,7 +23,7 @@
           </component>
         </children>
       </grid>
-      <component id="8fdf0" class="javax.swing.JButton" binding="button2" default-binding="true">
+      <component id="8fdf0" class="javax.swing.JButton" binding="rosteredButton" default-binding="true">
         <constraints>
           <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>

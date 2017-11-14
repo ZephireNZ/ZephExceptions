@@ -2,6 +2,10 @@ package nz.zephire.exceptions.gui;
 
 import com.intellij.uiDesigner.core.GridConstraints;
 import com.intellij.uiDesigner.core.GridLayoutManager;
+import nz.zephire.exceptions.exceptions.Exception;
+import nz.zephire.exceptions.exceptions.ExceptionManager;
+import nz.zephire.exceptions.exceptions.ExceptionManagerKt;
+import org.joda.time.LocalTime;
 
 import java.awt.BorderLayout;
 import java.awt.Insets;
@@ -15,8 +19,8 @@ import javax.swing.SwingUtilities;
 public class WindowMain {
 
     private JPanel root;
-    private JButton button1;
-    private JButton button2;
+    private JButton exceptionButton;
+    private JButton rosteredButton;
 
     public static void main(String[] args) {
         final WindowMain win = new WindowMain();
@@ -30,14 +34,60 @@ public class WindowMain {
 
     public WindowMain() {
         //TODO: State for size/location
+        updateGUI();
     }
 
     public void createAndShowGUI() {
-        JFrame frame = new JFrame("WindowStart");
+        JFrame frame = new JFrame();
         frame.setContentPane(new WindowMain().root);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
         frame.setVisible(true);
+    }
+
+    public void updateGUI() {
+        ExceptionManager em = ExceptionManagerKt.inst();
+        exceptionButton.setText(getExceptionString());
+
+
+        rosteredButton.setText(getRosteredString());
+    }
+
+    private String getExceptionString() {
+        ExceptionManager em = ExceptionManagerKt.inst();
+
+        int adherence = em.getAdherencePercent();
+        String exceptionString;
+        if (ExceptionManagerKt.inst().getConfig().getCurrentExceptionStartTime() == null) {
+            // Show Start Exception
+            exceptionString = "Start (%d%%)";
+        } else {
+            // Show End Exception
+            exceptionString = "End (%d%%)";
+        }
+
+        return String.format(exceptionString, adherence);
+    }
+
+    private String getRosteredString() {
+        ExceptionManager em = ExceptionManagerKt.inst();
+
+        LocalTime now = LocalTime.now();
+
+        if (now.compareTo(em.getConfig().getStartTime()) < 0) { // now < startTime, ie startTime is in future
+            return String.format("Start Day (%s)", GUIUtils.TIME_FORMAT.print(em.getConfig().getStartTime()));
+        }
+
+        Exception next = em.getNextPreApproved();
+        if (next == null) { // No more exceptions
+            return String.format("End Day (%s)", GUIUtils.TIME_FORMAT.print(em.getConfig().getEndTime()));
+        }
+
+        if (em.getConfig().getCurrentRostered() == null) { // Not currently in a pre-approved
+            return String.format("%s (%s)", next.getDescription(), GUIUtils.TIME_FORMAT.print(next.getStart()));
+        }
+
+        return String.format("End %s (%s)", next.getDescription(), GUIUtils.TIME_FORMAT.print(next.getEnd()));
     }
 
     {
@@ -60,12 +110,12 @@ public class WindowMain {
         root.add(panel1, new GridConstraints(0, 0, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_BOTH,
                 GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_WANT_GROW, null, null, null,
                 0, false));
-        button1 = new JButton();
-        button1.setText("Button");
-        panel1.add(button1, BorderLayout.CENTER);
-        button2 = new JButton();
-        button2.setText("Button");
-        root.add(button2, new GridConstraints(1, 0, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_BOTH,
+        exceptionButton = new JButton();
+        exceptionButton.setText("Button");
+        panel1.add(exceptionButton, BorderLayout.CENTER);
+        rosteredButton = new JButton();
+        rosteredButton.setText("Button");
+        root.add(rosteredButton, new GridConstraints(1, 0, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_BOTH,
                 GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0,
                 false));
     }
