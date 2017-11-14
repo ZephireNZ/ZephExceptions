@@ -59,7 +59,7 @@ private fun readFormData(formData: String): SPFormData {
 
     return SPFormData(
             obj[REQUEST_UUID] as String,
-            obj[TIMESTAMP_ZEROED] as String,
+            (obj[TIMESTAMP_ZEROED] as Int).toString(),
             obj[CANARY] as String,
             approvers,
             obj
